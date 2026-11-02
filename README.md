@@ -60,6 +60,15 @@ fixture identities, canonical prompts, and denominator rules remain intact.
 The historical matched `no_memory` arm still replays the same SDK store and omits
 retrieval; it is distinct from the independent `NoMemoryBackend`.
 
+Release acceptance uses `lifecycle-isolated-replay/v2`: a fresh database and
+HNSW index per fixture, with rollback checks and raw score-component receipts.
+The original shared-index baseline remains unchanged. Its cycling-club preference
+rank varied between 1 and 2 when approximate semantic retrieval omitted that
+candidate; isolated replay requires rank 1 and both semantic candidates. The
+receipt explicitly records this historical rank difference. It does not claim
+exact historical parity or improved learning efficacy; all other normalized
+scoreboard fields must match, including omissions and denominators.
+
 ## Behavioral scoring
 
 `memory_evaluation.elephant_scorer` is the single canonical ELEPHANT/GRACE prompt

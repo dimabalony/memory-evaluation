@@ -124,13 +124,27 @@ def build_evidence(dist, reports, source_commit, sdk_wheel):
     if neutral["installed_payloads"] != payloads:
         raise ValueError("neutral and SDK environments installed different evaluation payloads")
     scenarios = {}
-    for name in ("lifecycle-raw.json", "lifecycle-scoreboard.json", "lifecycle-mutation.json", "lifecycle-parity.json"):
+    for name in (
+        "lifecycle-raw.json", "lifecycle-scoreboard.json", "lifecycle-mutation.json",
+        "lifecycle-parity.json", "lifecycle-retrieval-scores.json",
+    ):
         path = reports / name
         value = json.loads(path.read_text())
         if not isinstance(value, dict) or not value:
             raise ValueError("missing lifecycle evidence")
-        if name == "lifecycle-parity.json" and value.get("passed") is not True:
-            raise ValueError("historical lifecycle scores changed")
+        if name == "lifecycle-parity.json":
+            root = Path(__file__).resolve().parents[1]
+            contract_path = root / "tests/baselines/lifecycle-isolated-v2.json"
+            contract = json.loads(contract_path.read_text())
+            if (
+                value.get("isolated_baseline_passed") is not True
+                or value.get("historical_exact_parity") is not False
+                or value.get("semantic_candidates_complete") is not True
+                or value.get("historical_differences") != contract["differences"]
+                or value.get("instrument_contract_sha256") != sha256(contract_path)
+                or value.get("baseline_sha256") != contract["historical_baseline_sha256"]
+            ):
+                raise ValueError("isolated lifecycle proof or declared historical difference changed")
         if name == "lifecycle-mutation.json" and (value["residual_rows"] or value["changed_tables"]):
             raise ValueError("lifecycle left residual data")
         scenarios[name] = sha256(path)

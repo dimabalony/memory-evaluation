@@ -18,3 +18,32 @@ def project(board):
             if "subject_id" in miss:
                 miss["subject_id"] = "<generated-subject-id>"
     return result
+
+
+def differences(before, after, path=()):
+    """Retain every changed field, including ranks; never filter a difference."""
+    if type(before) is type(after) and isinstance(before, dict) and before.keys() == after.keys():
+        return [row for key in before for row in differences(before[key], after[key], (*path, key))]
+    if type(before) is type(after) and isinstance(before, list) and len(before) == len(after):
+        return [row for index, (left, right) in enumerate(zip(before, after))
+                for row in differences(left, right, (*path, index))]
+    return [] if before == after else [{"path": list(path), "before": before, "after": after}]
+
+
+def compare_isolated(board, historical, contract):
+    actual = project(board)
+    expected = json.loads(json.dumps(historical["scoreboard"]))
+    for change in contract["differences"]:
+        target = expected
+        for key in change["path"][:-1]:
+            target = target[key]
+        key = change["path"][-1]
+        if target[key] != change["before"]:
+            raise ValueError("historical baseline does not match declared instrument change")
+        target[key] = change["after"]
+    return {
+        "instrument": contract["format"],
+        "isolated_baseline_passed": actual == expected,
+        "historical_exact_parity": actual == historical["scoreboard"],
+        "historical_differences": differences(historical["scoreboard"], actual),
+    }

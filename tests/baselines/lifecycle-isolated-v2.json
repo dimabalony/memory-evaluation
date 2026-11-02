@@ -1,0 +1,22 @@
+{
+  "format": "lifecycle-isolated-replay/v2",
+  "isolation": "fresh database and HNSW index per fixture; rollback and content fingerprint retained",
+  "historical_baseline_sha256": "542faf87078016b9cb12a59723d72214ff54dcd1492582acc8f08e0e5fc1a522",
+  "historical_exact_parity": false,
+  "reason": "The historical shared-index replay rolls back fixture rows but retains HNSW index state. Repeated identical replays measured stable_preference rank 1 or 2 when its semantic candidate was present or missing. The isolated release proof measures rank 1 with both semantic candidates present; this is a declared instrument change, not exact historical rank parity. SDK retrieval, scoring, fixture content, and denominator semantics are unchanged.",
+  "differences": [
+    {
+      "path": [
+        "fixtures",
+        6,
+        "readback",
+        "probes",
+        0,
+        "expect_ranks",
+        "stable_preference"
+      ],
+      "before": 2,
+      "after": 1
+    }
+  ]
+}
