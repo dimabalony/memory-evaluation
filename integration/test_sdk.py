@@ -1,6 +1,8 @@
 """Explicit PostgreSQL acceptance; never skip when requested."""
 
 import hashlib
+import importlib.util
+import json
 import os
 import uuid
 from pathlib import Path
@@ -41,13 +43,38 @@ async def test_preserved_lifecycle_replay(database):
     db = database
     with recorded_host(max(map(fixture_end, fixtures.fixtures))):
         await db.create_schema(HISTORY)
-        raw = await run_write_readback(fixtures, db, fixture_clock=fixture_end)
+        raw = await run_write_readback(fixtures, db, fixture_clock=fixture_end, report_root=ROOT)
         board = build_scoreboard(raw, fixtures)
     assert board["aggregate"]["n_invalid"] == 0
     assert len(raw["results"]) == 12
     assert all(row["status"] == "ok" for row in raw["results"])
     assert db.mutation_check()["residual_rows"] == 0
     assert not db.mutation_check()["changed_tables"]
+    spec = importlib.util.spec_from_file_location("scoreboard_projection", ROOT / "scripts/scoreboard_projection.py")
+    projection = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(projection)
+    baseline = json.loads((ROOT / "tests/baselines/lifecycle-v1.json").read_text())
+    normalized = projection.project(board)
+    reports = Path(os.environ.get("REPORTS", ROOT / "build/proof"))
+    reports.mkdir(parents=True, exist_ok=True)
+    for name, value in (
+        ("lifecycle-raw.json", raw),
+        ("lifecycle-scoreboard.json", board),
+        ("lifecycle-mutation.json", db.mutation_check()),
+        (
+            "lifecycle-parity.json",
+            {
+                "passed": normalized == baseline["scoreboard"],
+                "baseline_sha256": hashlib.sha256(
+                    (ROOT / "tests/baselines/lifecycle-v1.json").read_bytes()
+                ).hexdigest(),
+                "baseline_source_revision": baseline["source_revision"],
+                "aggregate": board["aggregate"],
+            },
+        ),
+    ):
+        (reports / name).write_text(json.dumps(value, indent=2, default=str) + "\n")
+    assert normalized == baseline["scoreboard"]
 
 
 async def test_sdk_uses_same_neutral_runner(database):

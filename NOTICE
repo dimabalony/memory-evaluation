@@ -13,3 +13,12 @@ included. Existing fixture and prompt identities are retained for comparability.
 
 Dependencies, when separately installed, retain their respective licenses.
 SOURCE_PROVENANCE.json records the reviewed source seed and transformations.
+
+The generic dedup support fixture is independently generated export support. It
+replaces an omitted private same-path fixture; its provenance is not transferred
+from or asserted about that private fixture. Seed hashes identify exported bytes.
+
+The lifecycle-v1 scoreboard baseline is derived from the reviewed synthetic
+recorded replay at source revision 1fdd3316ba5d62c588a6d6910d6ea16e4751df0a.
+Only run metadata/timing and generated identifiers are normalized; observed
+omissions and failed expectations are retained. It is licensed GPL-3.0-or-later.

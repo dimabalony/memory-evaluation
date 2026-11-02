@@ -1,0 +1,73 @@
+name: Evaluation proof
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  installed-wheel:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg15
+        env:
+          POSTGRES_PASSWORD: evaluation
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd 'pg_isready -U postgres'
+          --health-interval 5s --health-timeout 5s --health-retries 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Build source archive and wheel from that archive
+        run: |
+          python -m pip install build
+          python -m build --sdist --outdir rehearsal/dist
+          python - <<'PYCODE'
+          import os, pathlib, tarfile
+          archive, = pathlib.Path('rehearsal/dist').glob('*.tar.gz')
+          with tarfile.open(archive) as source:
+              source.extractall('rehearsal/unpacked', filter='data')
+          root, = pathlib.Path('rehearsal/unpacked').iterdir()
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write(f'CANDIDATE_ROOT={root.resolve()}\n')
+          PYCODE
+      - run: python -m build --wheel --outdir "$GITHUB_WORKSPACE/rehearsal/dist" "$CANDIDATE_ROOT"
+      - name: Prove neutral runtime without SDK or ORM
+        working-directory: ${{ env.CANDIDATE_ROOT }}
+        env:
+          REPORTS: ${{ github.workspace }}/rehearsal/reports
+          DIST: ${{ github.workspace }}/rehearsal/dist
+        run: |
+          python -m venv "$GITHUB_WORKSPACE/rehearsal/neutral"
+          NEUTRAL="$GITHUB_WORKSPACE/rehearsal/neutral/bin/python"
+          "$NEUTRAL" -m pip install "$DIST"/*.whl pytest pytest-asyncio
+          "$NEUTRAL" -m pytest tests/neutral --junitxml="$REPORTS/neutral.xml"
+          "$NEUTRAL" -I scripts/release_evidence.py --neutral --dist "$DIST" --reports "$REPORTS"
+      - name: Install exact SDK and evaluation archives
+        working-directory: ${{ env.CANDIDATE_ROOT }}
+        run: |
+          python scripts/install_sdk_artifact.py
+          python -m pip install "$GITHUB_WORKSPACE"/rehearsal/dist/*.whl -r requirements-test.txt
+      - name: Full evaluation suite and disposable PostgreSQL replay
+        working-directory: ${{ env.CANDIDATE_ROOT }}
+        env:
+          REPORTS: ${{ github.workspace }}/rehearsal/reports
+          EVAL_DATABASE_URL: postgresql+asyncpg://postgres:evaluation@localhost:5432/postgres
+        run: |
+          export EVAL_SDK_WHEEL="$CANDIDATE_ROOT/build/sdk/recoleva-0.3.0-py3-none-any.whl"
+          PYTHONPATH="$CANDIDATE_ROOT/tests" python -m pytest tests --junitxml="$REPORTS/unit.xml"
+          python -I -m pytest integration --junitxml="$REPORTS/postgres.xml"
+          python -I scripts/release_evidence.py --dist "$GITHUB_WORKSPACE/rehearsal/dist" \
+            --reports "$REPORTS" --source-commit "$GITHUB_SHA" --sdk-wheel "$EVAL_SDK_WHEEL"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: memory-evaluation-proof
+          path: |
+            rehearsal/reports
+            rehearsal/dist

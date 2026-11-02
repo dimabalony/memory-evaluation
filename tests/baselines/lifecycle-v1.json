@@ -1,0 +1,1110 @@
+{
+  "format": "memory-evaluation-scoreboard-baseline/v1",
+  "source_revision": "1fdd3316ba5d62c588a6d6910d6ea16e4751df0a",
+  "original_scoreboard_sha256": "5fa164666cf2f4750fd0278ca1758ebe9e22f3520d3e1a2044a800cc5a82b1b3",
+  "quality": "synthetic recorded replay; learning efficacy unmeasured",
+  "normalization": "Only header time/revision/path, per-fixture elapsed time, generated trace IDs in prohibited/unexpected hits, generated subject IDs in attribution misses. All metrics, omissions, content, ranks, provenance, instrument versions and mutation receipts remain exact.",
+  "scoreboard": {
+    "header": {
+      "format": "kai-memory-scoreboard/v1",
+      "fixture_set": {
+        "sha256": "bf3fc5f65404460d911bd07de54c4b8bc4bc6280ff41d7eadb79bf51f0e10598",
+        "n": 12
+      },
+      "fixture_provenance": [
+        {
+          "id": "lc-01-flatmates-group",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "0f405f12e8d98d4cad1e9f7899de1308e30d535933cb6296af91b1ca7a39ff70"
+        },
+        {
+          "id": "lc-02-private-family-health",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "e5a6894ef4d39341323395ea2f506101b4d8a0247eec2dcd40db3b4db213e589"
+        },
+        {
+          "id": "lc-03-studio-team-topic",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "57353954063b0a8b2bd2dfaa4be0ca3e1787ed9bf1adf850e249a184fe1868c9"
+        },
+        {
+          "id": "lc-04-cross-script-household",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "a2c56c542d15701da7f9827f748e9d8e9096eb8d3fee085cb69f06135a200e7f"
+        },
+        {
+          "id": "lc-05-volunteer-garden",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "22825f48dff34fabd0c772808094a89916eda2569449cf1ce65f0fca8a1fc615"
+        },
+        {
+          "id": "lc-06-choir-rehearsal",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "7f401746a2e516895f1ff20e7262cb2a53b4ec378ba38c5173fca460da35561a"
+        },
+        {
+          "id": "lc-07-cycling-club",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "4b55691588b7453085822f0c534c998d4c30cc09b876578b084d81b6e8e3c554"
+        },
+        {
+          "id": "lc-08-library-workshop",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "eece8457ebed192d30502453d14b291d2eb7b06c4ab29427f633f2d36a6833fe"
+        },
+        {
+          "id": "lc-09-theatre-props",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "52e632e096e5beb5a7907bdf37dd54f39f8b1faea09282366f5eb23d8e8f6adf"
+        },
+        {
+          "id": "lc-10-bakery-team",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "bbf22a7570aac1f55f20b96d497a7421d57285abb54d540dafe121fcb206907b"
+        },
+        {
+          "id": "lc-11-robotics-team",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "394e8b357f0e99aec3310eebfe1c87b26692c2ed82dd93840c3e01fbb5bdf9ac"
+        },
+        {
+          "id": "lc-12-ceramics-studio",
+          "source": "synthetic",
+          "approved_by": null,
+          "version": 1,
+          "content_sha256": "34f8992be8388d8d3852313c462907fa0d3831e0a1bf801cfb426947808f81fd"
+        }
+      ],
+      "extractor": {
+        "name": "recorded",
+        "model": null,
+        "quality": "pipeline-only"
+      },
+      "quality": "pipeline-only",
+      "prompt_sha256": "fdce26088a08b0bcee2fdfb28de99203cd5389ffc77f1f40d7829f91ed257e99",
+      "embedder": "token-hash-v1",
+      "judge": null,
+      "cognitive_config": "code defaults (the disposable database has no cognitive_config rows)",
+      "retrieval_weights": "code defaults (DEFAULT_RETRIEVAL_WEIGHTS, pinned for readback)"
+    },
+    "mutation_check": {
+      "runs_checked": 12,
+      "tables_checked": 19,
+      "residual_rows": 0,
+      "changed_tables": [],
+      "method": "per-table count + content sha256 on a fresh connection, before vs after rollback"
+    },
+    "aggregate": {
+      "n_fixtures": 12,
+      "n_valid": 12,
+      "n_invalid": 0,
+      "n_invalid_readback": 0,
+      "denominators": {
+        "capture_recall": 50,
+        "fabrication_rate": 47,
+        "attribution_accuracy": 52,
+        "durability_accuracy": 21,
+        "dedup_accuracy": 9,
+        "supersession_accuracy": 7,
+        "readback_accuracy": 21
+      },
+      "capture_recall": 0.98,
+      "omitted": 1,
+      "prohibited_hits": 1,
+      "fabrication_rate": 0.0213,
+      "unexpected": 1,
+      "attribution_accuracy": 0.9808,
+      "durability_accuracy": 1.0,
+      "dedup_accuracy": 1.0,
+      "supersession_accuracy": 1.0,
+      "echo_leaks": 1,
+      "prompt_control_misses": 0,
+      "readback_accuracy": 0.9524,
+      "extraction_coverage_min": 1.0,
+      "errors": 0
+    },
+    "fixtures": [
+      {
+        "id": "lc-01-flatmates-group",
+        "status": "ok",
+        "messages": 32,
+        "checkpoints": 3,
+        "n_expected": 10,
+        "n_written_traces": 9,
+        "written": [
+          "bram_sister",
+          "sister_occupation_v1",
+          "teo_employer_v2",
+          "teo_occupation",
+          "drinks_plan",
+          "mila_vegetarian",
+          "mila_allergy",
+          "boiler_visit",
+          "sister_visit_moved",
+          "sister_occupation_v2"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 11,
+          "correct": 11,
+          "misses": []
+        },
+        "durability": {
+          "checked": 7,
+          "correct": 7,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 3,
+          "met": 3,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 4,
+          "met": 4,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 3,
+          "invalid": 0,
+          "passed": 3,
+          "probes": [
+            {
+              "id": "rb_teo_employer",
+              "pass": true,
+              "expect_ranks": {
+                "teo_employer_v2": 1
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_sister_vet",
+              "pass": true,
+              "expect_ranks": {
+                "sister_occupation_v2": 2
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_abstain_blood_type",
+              "pass": true,
+              "expect_ranks": {},
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 32,
+          "eligible_messages": 32,
+          "retained_history_messages": 32,
+          "intentionally_unextracted": 0,
+          "last_checkpoint": 32
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-02-private-family-health",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 2,
+        "n_expected": 9,
+        "n_written_traces": 8,
+        "written": [
+          "oren_mother",
+          "ilse_location",
+          "oren_asthma",
+          "oren_half_marathon",
+          "oren_portuguese",
+          "oren_trip",
+          "oren_sister",
+          "hanne_language",
+          "oren_dob_v2"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 10,
+          "correct": 10,
+          "misses": []
+        },
+        "durability": {
+          "checked": 7,
+          "correct": 7,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 1,
+          "met": 1,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 1,
+          "met": 1,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 2,
+          "met": 2,
+          "misses": []
+        },
+        "readback": {
+          "checked": 5,
+          "invalid": 0,
+          "passed": 5,
+          "probes": [
+            {
+              "id": "rb_birthday",
+              "pass": true,
+              "expect_ranks": {
+                "oren_dob_v2": 1
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_mother_surgery",
+              "pass": true,
+              "expect_ranks": {
+                "oren_mother": 1
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_move_echo",
+              "pass": true,
+              "expect_ranks": {
+                "oren_trip": 1
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_recalled_echo",
+              "pass": true,
+              "expect_ranks": {},
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_abstain_blood_type",
+              "pass": true,
+              "expect_ranks": {},
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 30,
+          "eligible_messages": 30,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 0,
+          "last_checkpoint": 30
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-03-studio-team-topic",
+        "status": "ok",
+        "messages": 26,
+        "checkpoints": 2,
+        "n_expected": 5,
+        "n_written_traces": 6,
+        "written": [
+          "launch_date",
+          "sizing_blocker",
+          "sami_relocation",
+          "handover_plan"
+        ],
+        "omitted": [
+          "rosa_title"
+        ],
+        "capture_recall": 0.8,
+        "prohibited_hits": [
+          {
+            "id": "launch_moved_echo",
+            "kind": "assistant_echo",
+            "trace_id": "<generated-trace-id>",
+            "content": "The team agreed the Kestrel launch could move to the 18th if the sizing chart slips"
+          }
+        ],
+        "unexpected": [
+          {
+            "trace_id": "<generated-trace-id>",
+            "content": "The client sent the sizing chart, clearing the blocker; the Kestrel launch stays on the 12th and Sam Adeyemi will run a mobile QA pass on Thursday"
+          }
+        ],
+        "attribution": {
+          "checked": 4,
+          "correct": 3,
+          "misses": [
+            {
+              "label": "sami_relocation",
+              "subject_id": "<generated-subject-id>"
+            }
+          ]
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 2,
+          "met": 2,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [
+          {
+            "id": "launch_moved_echo",
+            "where": "store"
+          }
+        ],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 2,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_launch_date",
+              "pass": false,
+              "expect_ranks": {
+                "launch_date": 2
+              },
+              "forbidden_hits": [
+                "18th"
+              ]
+            },
+            {
+              "id": "rb_helsinki",
+              "pass": true,
+              "expect_ranks": {
+                "sami_relocation": 1
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 26,
+          "eligible_messages": 26,
+          "retained_history_messages": 26,
+          "intentionally_unextracted": 0,
+          "last_checkpoint": 26
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-04-cross-script-household",
+        "status": "ok",
+        "messages": 34,
+        "checkpoints": 2,
+        "n_expected": 9,
+        "n_written_traces": 7,
+        "written": [
+          "yaroslav_captain",
+          "vera_brother",
+          "yaroslav_city_v2",
+          "yaroslav_wife",
+          "yara_neighbour",
+          "new_year_trip",
+          "vera_shifts",
+          "pavel_plumber",
+          "dasha_pregnant"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 9,
+          "correct": 9,
+          "misses": []
+        },
+        "durability": {
+          "checked": 6,
+          "correct": 6,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 3,
+          "met": 3,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 2,
+          "met": 2,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 3,
+          "invalid": 0,
+          "passed": 3,
+          "probes": [
+            {
+              "id": "rb_yaroslav_city",
+              "pass": true,
+              "expect_ranks": {
+                "yaroslav_city_v2": 5
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_vera_employer",
+              "pass": true,
+              "expect_ranks": {
+                "pre_vera_employer": 6
+              },
+              "forbidden_hits": []
+            },
+            {
+              "id": "rb_abstain_film",
+              "pass": true,
+              "expect_ranks": {},
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 34,
+          "eligible_messages": 34,
+          "retained_history_messages": 34,
+          "intentionally_unextracted": 0,
+          "last_checkpoint": 34
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-05-volunteer-garden",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 2
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 16,
+          "eligible_messages": 16,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 14,
+          "last_checkpoint": 16
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-06-choir-rehearsal",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 2
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 16,
+          "eligible_messages": 16,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 14,
+          "last_checkpoint": 16
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-07-cycling-club",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "stable_preference",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 1,
+          "correct": 1,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "stable_preference": 2
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 16,
+          "eligible_messages": 16,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 14,
+          "last_checkpoint": 16
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-08-library-workshop",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 2
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 16,
+          "eligible_messages": 16,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 14,
+          "last_checkpoint": 16
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-09-theatre-props",
+        "status": "ok",
+        "messages": 32,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 1
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 10,
+          "eligible_messages": 10,
+          "retained_history_messages": 32,
+          "intentionally_unextracted": 22,
+          "last_checkpoint": 10
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-10-bakery-team",
+        "status": "ok",
+        "messages": 30,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 1
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 10,
+          "eligible_messages": 10,
+          "retained_history_messages": 30,
+          "intentionally_unextracted": 20,
+          "last_checkpoint": 10
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-11-robotics-team",
+        "status": "ok",
+        "messages": 31,
+        "checkpoints": 2,
+        "n_expected": 3,
+        "n_written_traces": 3,
+        "written": [
+          "durable",
+          "date_v1",
+          "sister_work"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 4,
+          "correct": 4,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 1
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 20,
+          "eligible_messages": 20,
+          "retained_history_messages": 31,
+          "intentionally_unextracted": 11,
+          "last_checkpoint": 20
+        },
+        "errors": []
+      },
+      {
+        "id": "lc-12-ceramics-studio",
+        "status": "ok",
+        "messages": 36,
+        "checkpoints": 1,
+        "n_expected": 2,
+        "n_written_traces": 2,
+        "written": [
+          "durable",
+          "date_v1"
+        ],
+        "omitted": [],
+        "capture_recall": 1.0,
+        "prohibited_hits": [],
+        "unexpected": [],
+        "attribution": {
+          "checked": 2,
+          "correct": 2,
+          "misses": []
+        },
+        "durability": {
+          "checked": 0,
+          "correct": 0,
+          "misses": []
+        },
+        "dedup": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "supersession": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "echo_leaks": [],
+        "prompt_controls": {
+          "checked": 0,
+          "met": 0,
+          "misses": []
+        },
+        "readback": {
+          "checked": 1,
+          "invalid": 0,
+          "passed": 1,
+          "probes": [
+            {
+              "id": "rb_durable",
+              "pass": true,
+              "expect_ranks": {
+                "durable": 1
+              },
+              "forbidden_hits": []
+            }
+          ]
+        },
+        "extraction_coverage": 1.0,
+        "extraction_evidence": {
+          "messages_read": 10,
+          "eligible_messages": 10,
+          "retained_history_messages": 36,
+          "intentionally_unextracted": 26,
+          "last_checkpoint": 10
+        },
+        "errors": []
+      }
+    ],
+    "gaps": [
+      {
+        "instrument": "read-to-answer (Layer A)",
+        "component": "Recognition/retrieval, Mid-turn recall",
+        "reason": "answer correctness needs the DB-745 turn harness and a judge whose unparsed verdict is invalid"
+      },
+      {
+        "instrument": "consolidation-invariants",
+        "component": "Consolidation",
+        "reason": "L3 is not replayed"
+      },
+      {
+        "instrument": "relationship-allowlist precision/recall, mixed-script fork rate",
+        "component": "Entities/relationships",
+        "reason": "relationship edges are written by L3, which is not replayed"
+      },
+      {
+        "instrument": "rule-efficacy",
+        "component": "Procedural learning",
+        "reason": "procedural extraction is off"
+      },
+      {
+        "instrument": "steer-rejection attribution, verdict-anchor fidelity",
+        "component": "Attribution",
+        "reason": "no native steering in this layer"
+      },
+      {
+        "instrument": "scope-leak-rate",
+        "component": "Scope",
+        "reason": "one chat per fixture; no cross-scope reads"
+      },
+      {
+        "instrument": "retention-curve",
+        "component": "Forgetting",
+        "reason": "no decay or pruning replay"
+      },
+      {
+        "instrument": "native-vs-legacy parity",
+        "component": "Native vs legacy",
+        "reason": "needs the recognition hook"
+      },
+      {
+        "instrument": "persona composition, rule serving scope",
+        "component": "Recognition/retrieval",
+        "reason": "not exercised by write-to-readback"
+      },
+      {
+        "instrument": "extractor quality",
+        "component": "Extraction",
+        "reason": "recorded responses fix the model's output; run --live for extractor-and-pipeline evidence"
+      }
+    ]
+  }
+}

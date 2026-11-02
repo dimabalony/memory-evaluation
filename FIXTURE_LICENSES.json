@@ -103,8 +103,9 @@
       "path": "tests/fixtures/priming_benchmark/dedup_pairs.json",
       "sha256": "9d791a20a77631d977d15a3fe3f8c31751637613c5013753275de538a09c0dd7",
       "license": "GPL-3.0-or-later",
-      "source": "authored-synthetic",
-      "scope": "reviewed synthetic test fixture"
+      "source": "generated-synthetic",
+      "scope": "independently generated generic dedup test support; replaces omitted private fixture, not a sanitization or relabeling of it",
+      "generator": "reviewed seed scripts/memory_export_additional.py::synthetic_dedup_fixture"
     }
   ]
 }

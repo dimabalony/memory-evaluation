@@ -49,7 +49,9 @@ learning efficacy or clinical/personal-advice quality.
 
 The optional `sdk` extra pins `recoleva==0.3.0` (import namespace `kai_memory`).
 `memory_evaluation.backends.sdk.SDKBackend` uses a disposable local PostgreSQL
-with pgvector and requires the installed SDK wheel SHA-256. Use only a dedicated,
+with pgvector and verifies the installed SDK version, archive SHA-256, import location,
+and payload records before replay. Install the pinned wheel with pip so its
+archive hash provenance is recorded. Use only a dedicated,
 empty database. Its fixture session reuses the canonical SDK replay and retrieval
 instrument. The original Layer A/B APIs remain at `memory_evaluation.eval`:
 `DisposableDB`, `run_write_readback`, `build_scoreboard`, `run_read_to_answer`,
