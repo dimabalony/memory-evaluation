@@ -45,7 +45,7 @@ jobs:
         run: |
           python -m venv "$GITHUB_WORKSPACE/rehearsal/neutral"
           NEUTRAL="$GITHUB_WORKSPACE/rehearsal/neutral/bin/python"
-          "$NEUTRAL" -m pip install "$DIST"/*.whl pytest pytest-asyncio
+          "$NEUTRAL" -m pip install "$DIST"/*.whl pytest pytest-asyncio mypy==1.20.0
           "$NEUTRAL" -m pytest tests/neutral --junitxml="$REPORTS/neutral.xml"
           "$NEUTRAL" -I scripts/release_evidence.py --neutral --dist "$DIST" --reports "$REPORTS"
       - name: Install exact SDK and evaluation archives
