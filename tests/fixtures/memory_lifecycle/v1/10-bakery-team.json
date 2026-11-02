@@ -1,0 +1,501 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-10-bakery-team",
+  "title": "Bakery: third-speaker relative, explicit vegan denial and a delivery crossing the month boundary",
+  "split": "held_out",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "bbf22a7570aac1f55f20b96d497a7421d57285abb54d540dafe121fcb206907b",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "continuation_anaphora",
+    "corrections_contradictions",
+    "durable_vs_transient",
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": -1009000000110,
+    "topic_id": null,
+    "is_group": true,
+    "title": "bakery team"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200100,
+      "name": "Ivo Marin",
+      "admin": true
+    },
+    {
+      "key": "peer",
+      "telegram_user_id": 9200101,
+      "name": "Iva Marin",
+      "admin": false
+    },
+    {
+      "key": "third",
+      "telegram_user_id": 9200102,
+      "name": "Mara Celik",
+      "admin": false
+    }
+  ],
+  "messages": [
+    {
+      "from": "owner",
+      "minute": 0,
+      "text": "Le nouveau contrat est signé : je suis apprenti boulanger chez Grain Bleu."
+    },
+    {
+      "from": "third",
+      "minute": 3,
+      "text": "Félicitations Ivo. Mon cousin Ivo Celik cherche aussi un apprentissage."
+    },
+    {
+      "from": "peer",
+      "minute": 6,
+      "text": "Deux Ivo dans la même conversation, ça va être pratique."
+    },
+    {
+      "from": "owner",
+      "minute": 9,
+      "text": "Ton cousin et moi sommes bien deux personnes différentes."
+    },
+    {
+      "from": "third",
+      "minute": 12,
+      "text": "Lui habite à Rouen; il ne travaille pas encore dans une boulangerie."
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Le four doit arriver le 28 février 2026."
+    },
+    {
+      "from": "assistant",
+      "minute": 18,
+      "text": "Apprentissage de Ivo Marin chez Grain Bleu; livraison provisoire le 28 février."
+    },
+    {
+      "from": "peer",
+      "minute": 21,
+      "text": "Les plaques doivent refroidir avant de les laver."
+    },
+    {
+      "from": "owner",
+      "minute": 24,
+      "text": "Oui, et ne mouillons pas la balance."
+    },
+    {
+      "from": "third",
+      "minute": 27,
+      "text": "Je range les sacs de farine loin de la porte."
+    },
+    {
+      "from": "peer",
+      "minute": 30,
+      "text": "Mara, où est le minuteur de secours?"
+    },
+    {
+      "from": "third",
+      "minute": 33,
+      "text": "Près du pétrin; je viens de le remettre là."
+    },
+    {
+      "from": "owner",
+      "minute": 36,
+      "text": "On pourra le tester après la pause."
+    },
+    {
+      "from": "assistant",
+      "minute": 39,
+      "text": "Le minuteur reste un sujet séparé de la livraison du four."
+    },
+    {
+      "from": "third",
+      "minute": 42,
+      "text": "Mon cousin Ivo Celik viendra peut-être samedi."
+    },
+    {
+      "from": "peer",
+      "minute": 45,
+      "text": "Il pourra nous aider à déplacer les cartons."
+    },
+    {
+      "from": "owner",
+      "minute": 48,
+      "text": "Revenons à mes repas pour la formation."
+    },
+    {
+      "from": "peer",
+      "minute": 51,
+      "text": "J’allais commander un repas végétalien pour toi, selon les anciennes notes."
+    },
+    {
+      "from": "owner",
+      "minute": 54,
+      "text": "Non : je ne suis pas végétalien. Je suis intolérant au lactose; la viande me convient."
+    },
+    {
+      "from": "third",
+      "minute": 57,
+      "text": "Donc on évite le lait pour Ivo Marin, pas tous les produits animaux."
+    },
+    {
+      "from": "owner",
+      "minute": 60,
+      "text": "Exactement. Ne confondez pas cette restriction avec le régime de ton cousin."
+    },
+    {
+      "from": "peer",
+      "minute": 63,
+      "text": "Et le petit carnet de commandes?"
+    },
+    {
+      "from": "third",
+      "minute": 66,
+      "text": "Aujourd’hui seulement il est dans le tiroir rouge, ensuite je le reprends."
+    },
+    {
+      "from": "owner",
+      "minute": 69,
+      "text": "Merci. As-tu reçu la réponse du transporteur?"
+    },
+    {
+      "from": "third",
+      "minute": 72,
+      "text": "Oui, la livraison est repoussée au mardi suivant."
+    },
+    {
+      "from": "peer",
+      "minute": 75,
+      "text": "Le mois change; peux-tu donner une date sans ambiguïté?"
+    },
+    {
+      "from": "third",
+      "minute": 78,
+      "text": "Le mardi 3 mars 2026, et non le samedi 28 février."
+    },
+    {
+      "from": "owner",
+      "minute": 81,
+      "text": "D’accord, le 3 mars 2026 est confirmé pour le four."
+    },
+    {
+      "from": "assistant",
+      "minute": 84,
+      "text": "Je suivrai la date confirmée et la restriction alimentaire explicitement corrigée."
+    },
+    {
+      "from": "peer",
+      "minute": 87,
+      "text": "On peut clore la liste pour ce soir."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 10,
+      "response": {
+        "memories": [
+          {
+            "content": "Ivo Marin: apprenti boulanger chez Grain Bleu",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Ivo Marin",
+                "type": "person",
+                "matched_participant_key": "9200100"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Ivo Marin",
+                "field": "occupation",
+                "value": "apprenti boulanger chez Grain Bleu",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Le four doit arriver le 28 février 2026",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Ivo Marin",
+                "type": "person",
+                "matched_participant_key": "9200100"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "apprenti boulanger chez Grain Bleu"
+        ],
+        "subject": "Ivo Marin",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "apprenti boulanger chez Grain Bleu"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "Le four doit arriver le 28 février 2026"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "wrong_ivo_employer",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Ivo Celik",
+          "Grain Bleu"
+        ]
+      },
+      {
+        "id": "temporary_notebook",
+        "kind": "transient",
+        "content_contains": [
+          "tiroir rouge"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable fact did Ivo Marin state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "peer",
+        "question": "Où Ivo Marin fait-il son apprentissage?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          1
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 26,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Grain Bleu"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "peer",
+        "question": "Qui a signé un apprentissage chez Grain Bleu, Ivo Marin ou Ivo Celik?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 22,
+        "axes": [
+          "overlapping_names",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Ivo Marin"
+        ],
+        "expect_subject": "Ivo Marin",
+        "wrong_subjects": [
+          "Ivo Celik"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "peer",
+        "question": "Où est le carnet de commandes pour aujourd’hui seulement?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          23
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 6,
+        "axes": [
+          "durable_vs_transient",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "tiroir rouge"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "peer",
+        "question": "Quelle restriction alimentaire Ivo Marin a-t-il réellement déclarée?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          18,
+          19,
+          21
+        ],
+        "memory_labels": [
+          "pre_role"
+        ],
+        "distance_user_turns": 8,
+        "axes": [
+          "corrections_contradictions",
+          "stale_facts_updates",
+          "topic_switch_return"
+        ],
+        "prohibited": [
+          "est végétalien",
+          "is vegan"
+        ],
+        "expect_any": [
+          "lactose"
+        ]
+      },
+      {
+        "id": "q_date",
+        "asker": "peer",
+        "question": "Quelle est la date confirmée de livraison du four?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          25,
+          26,
+          27,
+          28
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 1,
+        "axes": [
+          "continuation_anaphora",
+          "corrections_contradictions"
+        ],
+        "prohibited": [
+          "28 février 2026"
+        ],
+        "expect_any": [
+          "3 mars 2026"
+        ]
+      },
+      {
+        "id": "q_relative",
+        "asker": "peer",
+        "question": "Où habite le cousin Ivo Celik?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          2,
+          4,
+          5
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 22,
+        "axes": [
+          "continuation_anaphora",
+          "overlapping_names",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Rouen"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "peer",
+        "question": "Quel est le numéro de passeport de Mara?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ivo Marin",
+        "type": "person",
+        "participant": "owner"
+      }
+    ]
+  },
+  "pre_state": {
+    "known_participants": [
+      "owner"
+    ],
+    "traces": [
+      {
+        "label": "pre_role",
+        "content": "Ivo Marin follows a vegan diet",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 90,
+        "entities": [
+          {
+            "name": "Ivo Marin",
+            "type": "person",
+            "participant": "owner"
+          }
+        ]
+      }
+    ]
+  }
+}

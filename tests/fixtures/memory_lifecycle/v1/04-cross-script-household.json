@@ -1,0 +1,860 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "Claude (DB-840 implementor session)",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "a2c56c542d15701da7f9827f748e9d8e9096eb8d3fee085cb69f06135a200e7f",
+    "pii": "none: fictional people, organisations and events; real city names used generically",
+    "license": "private-unlicensed"
+  },
+  "id": "lc-04-cross-script-household",
+  "title": "A private chat that switches between Russian and English: a brother's move supersedes a stale city, a neighbour's job is wrongly flagged as contradicting the user's own employer",
+  "notes": "The second checkpoint-1 memory carries a realistic extractor mistake: it flags the neighbour's bakery job as contradicting Vera's employer. The subject gate (DB-591) must refuse that invalidation, so pre_vera_employer stays valid and retrievable.",
+  "axes": [
+    "overlapping_names",
+    "stale_facts_updates",
+    "corrections_contradictions",
+    "continuation_anaphora",
+    "durable_vs_transient",
+    "topic_switch_return",
+    "distractor_topics",
+    "abstention_control"
+  ],
+  "chat": {
+    "chat_id": 9400041,
+    "topic_id": null,
+    "is_group": false,
+    "title": null
+  },
+  "start_at": "2026-06-20T17:00:00+00:00",
+  "participants": [
+    {
+      "key": "p_vera",
+      "telegram_user_id": 9400041,
+      "name": "Vera Sokolova",
+      "username": "vera_sk",
+      "admin": false
+    }
+  ],
+  "pre_state": {
+    "known_participants": [
+      "p_vera"
+    ],
+    "traces": [
+      {
+        "label": "pre_yaroslav_city",
+        "content": "Vera's brother Yaroslav Sokolov lives in Kazan",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 400,
+        "entities": [
+          {
+            "name": "Yaroslav Sokolov",
+            "type": "person"
+          },
+          {
+            "name": "Kazan",
+            "type": "place"
+          }
+        ],
+        "facts": [
+          {
+            "subject": "Yaroslav Sokolov",
+            "field": "city",
+            "value": "Kazan",
+            "polarity": "is",
+            "slot": "current_location",
+            "durability": "durable"
+          }
+        ]
+      },
+      {
+        "label": "pre_vera_employer",
+        "content": "Vera Sokolova works as a pharmacist at Brightwell Pharmacy",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 250,
+        "entities": [
+          {
+            "name": "Vera Sokolova",
+            "type": "person",
+            "participant": "p_vera"
+          },
+          {
+            "name": "Brightwell Pharmacy",
+            "type": "organization"
+          }
+        ],
+        "facts": [
+          {
+            "subject": "Vera Sokolova",
+            "field": "employer",
+            "value": "Brightwell Pharmacy",
+            "polarity": "is",
+            "slot": "employer",
+            "durability": "durable"
+          }
+        ]
+      }
+    ]
+  },
+  "messages": [
+    {
+      "from": "p_vera",
+      "minute": 0,
+      "text": "привет, Kai! у меня новости про брата"
+    },
+    {
+      "from": "assistant",
+      "minute": 1,
+      "text": "Привет, Вера! Рассказывай."
+    },
+    {
+      "from": "p_vera",
+      "minute": 2,
+      "text": "Ярослав наконец-то стал капитаном в авиакомпании, будет летать на A320"
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Поздравляю Ярослава! Это большой шаг."
+    },
+    {
+      "from": "p_vera",
+      "minute": 4,
+      "text": "да, и они с Дашей уже переехали из Казани в Самару, там у них база"
+    },
+    {
+      "from": "assistant",
+      "minute": 5,
+      "text": "Значит, теперь они в Самаре. Как Даша к этому относится?"
+    },
+    {
+      "from": "p_vera",
+      "minute": 6,
+      "text": "Даша рада, у неё там родители"
+    },
+    {
+      "from": "p_vera",
+      "minute": 8,
+      "text": "кстати, у нас новая соседка, Яра, въехала в квартиру напротив"
+    },
+    {
+      "from": "p_vera",
+      "minute": 9,
+      "text": "она работает в пекарне на Ленина, принесла нам круассаны"
+    },
+    {
+      "from": "assistant",
+      "minute": 10,
+      "text": "Как мило с её стороны!"
+    },
+    {
+      "from": "p_vera",
+      "minute": 11,
+      "text": "ага. а у нас ливень весь день, всё затопило во дворе"
+    },
+    {
+      "from": "assistant",
+      "minute": 12,
+      "text": "Надеюсь, ливень скоро закончится!"
+    },
+    {
+      "from": "p_vera",
+      "minute": 13,
+      "text": "switching to english, my keyboard is being weird"
+    },
+    {
+      "from": "p_vera",
+      "minute": 14,
+      "text": "Yaroslav also wants to fly us to Samara for New Year, his treat"
+    },
+    {
+      "from": "assistant",
+      "minute": 15,
+      "text": "That's generous of him! Would you go?"
+    },
+    {
+      "from": "p_vera",
+      "minute": 16,
+      "text": "probably, if work lets me. Brightwell is chaos in december"
+    },
+    {
+      "from": "assistant",
+      "minute": 17,
+      "text": "Pharmacies do get busy then. Are you still on the morning shifts there?"
+    },
+    {
+      "from": "p_vera",
+      "minute": 18,
+      "text": "yes, mornings till march"
+    },
+    {
+      "from": "p_vera",
+      "minute": 20,
+      "text": "oh and I finally booked the dentist, thursday 9am"
+    },
+    {
+      "from": "assistant",
+      "minute": 21,
+      "text": "Good, that's been on your list for a while."
+    },
+    {
+      "from": "p_vera",
+      "minute": 22,
+      "text": "don't remind me 😬"
+    },
+    {
+      "from": "p_vera",
+      "minute": 30,
+      "text": "question: Yara asked if we know a good plumber, do you remember the one we used?"
+    },
+    {
+      "from": "assistant",
+      "minute": 31,
+      "text": "I don't have a plumber saved for you, sorry, I can't find one in my notes."
+    },
+    {
+      "from": "p_vera",
+      "minute": 32,
+      "text": "ah ok, I'll ask Yaroslav, he knows everyone"
+    },
+    {
+      "from": "p_vera",
+      "minute": 33,
+      "text": "he says Pavel Mirtov, the guy from Kazan, but he only works there"
+    },
+    {
+      "from": "assistant",
+      "minute": 34,
+      "text": "Then he won't help with a plumber here. Want me to look for local options?"
+    },
+    {
+      "from": "p_vera",
+      "minute": 35,
+      "text": "no worries, Yara will find someone"
+    },
+    {
+      "from": "p_vera",
+      "minute": 40,
+      "text": "last thing: Dasha is pregnant!! due in April, Yaroslav is over the moon"
+    },
+    {
+      "from": "assistant",
+      "minute": 41,
+      "text": "That's wonderful news for Yaroslav and Dasha!"
+    },
+    {
+      "from": "p_vera",
+      "minute": 42,
+      "text": "I'm going to be an aunt 🥹"
+    },
+    {
+      "from": "assistant",
+      "minute": 43,
+      "text": "Congratulations, Aunt Vera!"
+    },
+    {
+      "from": "p_vera",
+      "minute": 44,
+      "text": "haha ok, bedtime. спокойной ночи"
+    },
+    {
+      "from": "assistant",
+      "minute": 45,
+      "text": "Спокойной ночи, Вера!"
+    },
+    {
+      "from": "p_vera",
+      "minute": 46,
+      "text": "🙂"
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 14,
+      "response": {
+        "memories": [
+          {
+            "content": "Брат Веры Ярослав Соколов стал капитаном в авиакомпании и летает на A320",
+            "memory_type": "status_change",
+            "significance": 4,
+            "emotion_valence": 0.7,
+            "emotion_arousal": 0.5,
+            "entities": [
+              {
+                "name": "Ярослав Соколов",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Вера Соколова",
+                "type": "person",
+                "matched_participant_key": "9400041"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Ярослав Соколов",
+                "field": "должность",
+                "value": "капитан A320 в авиакомпании",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              },
+              {
+                "subject": "Вера Соколова",
+                "field": "брат",
+                "value": "brother: Ярослав Соколов",
+                "polarity": "is",
+                "slot": "key_relationships",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Вера Соколова",
+                "predicate": "sibling_of",
+                "object": "Ярослав Соколов",
+                "confidence": 0.9
+              }
+            ],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Ярослав Соколов и его жена Даша переехали из Казани в Самару, где база авиакомпании",
+            "memory_type": "status_change",
+            "significance": 4,
+            "emotion_valence": 0.3,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Ярослав Соколов",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Даша",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Самара",
+                "type": "place",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Казань",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": "{{trace:pre_yaroslav_city}}",
+            "facts": [
+              {
+                "subject": "Ярослав Соколов",
+                "field": "город",
+                "value": "Самара",
+                "polarity": "is",
+                "slot": "current_location",
+                "durability": "durable"
+              },
+              {
+                "subject": "Ярослав Соколов",
+                "field": "жена",
+                "value": "wife: Даша",
+                "polarity": "is",
+                "slot": "key_relationships",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Даша",
+                "predicate": "spouse_of",
+                "object": "Ярослав Соколов",
+                "confidence": 0.85
+              }
+            ],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "У Веры новая соседка Яра, она въехала в квартиру напротив и работает в пекарне на улице Ленина",
+            "memory_type": "fact",
+            "significance": 2,
+            "emotion_valence": 0.4,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Яра",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Вера Соколова",
+                "type": "person",
+                "matched_participant_key": "9400041"
+              }
+            ],
+            "contradicts_memory_id": "{{trace:pre_vera_employer}}",
+            "facts": [
+              {
+                "subject": "Яра",
+                "field": "работа",
+                "value": "пекарня на улице Ленина",
+                "polarity": "is",
+                "slot": "employer",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.75,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Yaroslav Sokolov offered to fly Vera to Samara for New Year as his treat",
+            "memory_type": "plan",
+            "significance": 2,
+            "emotion_valence": 0.5,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Yaroslav Sokolov",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Vera Sokolova",
+                "type": "person",
+                "matched_participant_key": "9400041"
+              },
+              {
+                "name": "Samara",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    },
+    {
+      "after": 34,
+      "response": {
+        "memories": [
+          {
+            "content": "Vera Sokolova works morning shifts at Brightwell Pharmacy until March",
+            "memory_type": "fact",
+            "significance": 2,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Vera Sokolova",
+                "type": "person",
+                "matched_participant_key": "9400041"
+              },
+              {
+                "name": "Brightwell Pharmacy",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Vera Sokolova",
+                "field": "shift",
+                "value": "morning shifts until March",
+                "polarity": "is",
+                "slot": "off_schema",
+                "durability": "transient"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Pavel Mirtov is a plumber Yaroslav knows, but he only works in Kazan",
+            "memory_type": "fact",
+            "significance": 1,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Pavel Mirtov",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Yaroslav Sokolov",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Kazan",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Pavel Mirtov",
+                "field": "occupation",
+                "value": "plumber",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.7,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Yaroslav Sokolov's wife Dasha is pregnant and due in April; Vera will be an aunt",
+            "memory_type": "status_change",
+            "significance": 4,
+            "emotion_valence": 0.9,
+            "emotion_arousal": 0.7,
+            "entities": [
+              {
+                "name": "Yaroslav Sokolov",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Dasha",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Vera Sokolova",
+                "type": "person",
+                "matched_participant_key": "9400041"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Dasha",
+                "field": "pregnancy",
+                "value": "due in April",
+                "polarity": "is",
+                "slot": "off_schema",
+                "durability": "transient"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "yaroslav_captain",
+        "fact": {
+          "value_contains": "капитан"
+        },
+        "subject": "Yaroslav Sokolov",
+        "durable": true
+      },
+      {
+        "label": "vera_brother",
+        "fact": {
+          "value_contains": "brother:"
+        },
+        "subject": "Vera Sokolova",
+        "subject_participant": "p_vera",
+        "durable": false
+      },
+      {
+        "label": "yaroslav_city_v2",
+        "fact": {
+          "value_contains": "Самара"
+        },
+        "subject": "Yaroslav Sokolov",
+        "durable": true
+      },
+      {
+        "label": "yaroslav_wife",
+        "fact": {
+          "value_contains": "wife:"
+        },
+        "subject": "Yaroslav Sokolov",
+        "durable": false
+      },
+      {
+        "label": "yara_neighbour",
+        "fact": {
+          "value_contains": "пекарня"
+        },
+        "subject": "Яра",
+        "durable": true
+      },
+      {
+        "label": "new_year_trip",
+        "content_contains": [
+          "New Year"
+        ]
+      },
+      {
+        "label": "vera_shifts",
+        "content_contains": [
+          "morning shifts"
+        ]
+      },
+      {
+        "label": "pavel_plumber",
+        "fact": {
+          "value_contains": "plumber"
+        },
+        "subject": "Pavel Mirtov",
+        "durable": true
+      },
+      {
+        "label": "dasha_pregnant",
+        "content_contains": [
+          "pregnant",
+          "April"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "rain_chatter",
+        "kind": "distractor",
+        "content_contains": [
+          "ливень"
+        ]
+      },
+      {
+        "id": "dentist_appointment",
+        "kind": "transient",
+        "content_contains": [
+          "dentist"
+        ]
+      },
+      {
+        "id": "plumber_from_notes",
+        "kind": "assistant_echo",
+        "content_contains": [
+          "plumber saved"
+        ]
+      }
+    ],
+    "supersessions": [
+      {
+        "old": "pre_yaroslav_city",
+        "new": "yaroslav_city_v2"
+      }
+    ],
+    "must_stay_valid": [
+      "pre_vera_employer"
+    ],
+    "dedup": [
+      {
+        "id": "yaroslav_cross_script",
+        "names": [
+          "Yaroslav Sokolov",
+          "Ярослав Соколов"
+        ],
+        "type": "person",
+        "max_rows": 1
+      },
+      {
+        "id": "vera_cross_script",
+        "names": [
+          "Vera Sokolova",
+          "Вера Соколова"
+        ],
+        "type": "person",
+        "max_rows": 1
+      },
+      {
+        "id": "dasha_cross_script",
+        "names": [
+          "Dasha",
+          "Даша"
+        ],
+        "type": "person",
+        "max_rows": 1
+      }
+    ],
+    "entities": [
+      {
+        "name": "Vera Sokolova",
+        "type": "person",
+        "participant": "p_vera"
+      },
+      {
+        "name": "Яра",
+        "type": "person",
+        "participant": null
+      },
+      {
+        "name": "Pavel Mirtov",
+        "type": "person",
+        "participant": null
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_yaroslav_city",
+        "cue": "Where does Yaroslav Sokolov live now?",
+        "expect_labels": [
+          "yaroslav_city_v2"
+        ],
+        "forbid_labels": [
+          "pre_yaroslav_city"
+        ]
+      },
+      {
+        "id": "rb_vera_employer",
+        "cue": "Where does Vera Sokolova work?",
+        "expect_labels": [
+          "pre_vera_employer"
+        ]
+      },
+      {
+        "id": "rb_abstain_film",
+        "cue": "What is Vera Sokolova's favourite film?",
+        "expect_labels": [],
+        "forbid_contains": [
+          "film"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_yaroslav_city",
+        "asker": "p_vera",
+        "question": "Where do Yaroslav Sokolov and Dasha live now?",
+        "history": "none",
+        "expect_any": [
+          "Самара",
+          "Самаре",
+          "Самару",
+          "Samara"
+        ],
+        "prohibited": [
+          "lives in Kazan"
+        ],
+        "axes": [
+          "stale_facts_updates",
+          "overlapping_names"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          5
+        ],
+        "memory_labels": [
+          "yaroslav_city_v2"
+        ],
+        "distance_user_turns": 18
+      },
+      {
+        "id": "q_vera_pharmacy",
+        "asker": "p_vera",
+        "question": "Which pharmacy does Vera Sokolova work at?",
+        "history": "none",
+        "expect_any": [
+          "Brightwell"
+        ],
+        "prohibited": [
+          "пекарня",
+          "пекарне",
+          "пекарню",
+          "bakery"
+        ],
+        "axes": [
+          "corrections_contradictions"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          16
+        ],
+        "memory_labels": [
+          "pre_vera_employer"
+        ],
+        "distance_user_turns": 11
+      },
+      {
+        "id": "q_yara_job",
+        "asker": "p_vera",
+        "question": "Where does the new neighbour Яра work?",
+        "history": "none",
+        "expect_any": [
+          "пекарня",
+          "пекарне",
+          "пекарню",
+          "bakery"
+        ],
+        "axes": [
+          "overlapping_names",
+          "topic_switch_return"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          9
+        ],
+        "memory_labels": [
+          "yara_neighbour"
+        ],
+        "distance_user_turns": 15
+      },
+      {
+        "id": "q_dentist_later",
+        "asker": "p_vera",
+        "question": "When is Vera's dentist appointment?",
+        "history": "none",
+        "abstain": true,
+        "axes": [
+          "durable_vs_transient",
+          "abstention_control"
+        ],
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0
+      },
+      {
+        "id": "q_dentist_same_chat",
+        "asker": "p_vera",
+        "question": "When is my dentist appointment?",
+        "history": "full",
+        "expect_any": [
+          "thursday"
+        ],
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "availability": "history_only",
+        "evidence_message_indices": [
+          19
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 9
+      }
+    ]
+  },
+  "split": "held_out"
+}

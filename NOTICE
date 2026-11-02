@@ -1,0 +1,15 @@
+memory-evaluation
+Copyright (C) 2026 dimabalony
+
+This program and the authored synthetic fixtures listed in FIXTURE_LICENSES.json
+are licensed under the GNU General Public License, version 3 or (at your option)
+any later version (SPDX: GPL-3.0-or-later). See LICENSE.
+
+ELEPHANT scoring cites Liang et al., arXiv:2505.13995. Included representative
+stimuli and rubric implementation are authored project assets, not a copy of the
+paper dataset. No claim of endorsement, paper-result replication, or inclusion
+of that dataset is made. Private GRACE scenarios and production evidence are not
+included. Existing fixture and prompt identities are retained for comparability.
+
+Dependencies, when separately installed, retain their respective licenses.
+SOURCE_PROVENANCE.json records the reviewed source seed and transformations.

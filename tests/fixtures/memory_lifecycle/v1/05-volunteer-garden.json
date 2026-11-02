@@ -1,0 +1,432 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-05-volunteer-garden",
+  "title": "community garden: overlapping names, multilingual facts and a late unextracted correction",
+  "split": "tuning",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "22825f48dff34fabd0c772808094a89916eda2569449cf1ce65f0fca8a1fc615",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "continuation_anaphora",
+    "corrections_contradictions",
+    "distractor_topics",
+    "durable_vs_transient",
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": -1009000000105,
+    "topic_id": null,
+    "is_group": true,
+    "title": "community garden"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200050,
+      "name": "Nadia Sol",
+      "admin": true
+    },
+    {
+      "key": "peer",
+      "telegram_user_id": 9200051,
+      "name": "Nadia Vale",
+      "admin": false
+    }
+  ],
+  "messages": [
+    {
+      "from": "owner",
+      "minute": 0,
+      "text": "Quick update for the community garden chat."
+    },
+    {
+      "from": "peer",
+      "minute": 1,
+      "text": "Go ahead; I am sorting the shared supplies."
+    },
+    {
+      "from": "owner",
+      "minute": 2,
+      "text": "I coordinate the seed library at Mossbank Garden."
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Understood: Nadia Sol says I coordinate the seed library at Mossbank Garden."
+    },
+    {
+      "from": "peer",
+      "minute": 4,
+      "text": "To keep us separate: I am Nadia Vale, and that is not my role or preference."
+    },
+    {
+      "from": "owner",
+      "minute": 5,
+      "text": "The seed exchange is on 2026-05-10."
+    },
+    {
+      "from": "assistant",
+      "minute": 6,
+      "text": "I will keep that provisional date in the notes."
+    },
+    {
+      "from": "peer",
+      "minute": 7,
+      "text": "The compost thermometer is missing again."
+    },
+    {
+      "from": "owner",
+      "minute": 8,
+      "text": "I can lend ours until evening."
+    },
+    {
+      "from": "peer",
+      "minute": 9,
+      "text": "Does the pea bed need netting?"
+    },
+    {
+      "from": "owner",
+      "minute": 10,
+      "text": "Yes, pigeons found it yesterday."
+    },
+    {
+      "from": "assistant",
+      "minute": 11,
+      "text": "We can return to the schedule once the supplies are sorted."
+    },
+    {
+      "from": "peer",
+      "minute": 12,
+      "text": "Then we should check the spare mesh."
+    },
+    {
+      "from": "owner",
+      "minute": 13,
+      "text": "The tool shed has two rolls left."
+    },
+    {
+      "from": "peer",
+      "minute": 14,
+      "text": "I will bring the clips after lunch."
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Please keep the main path clear for deliveries."
+    },
+    {
+      "from": "peer",
+      "minute": 16,
+      "text": "Did the weather affect the delivery?"
+    },
+    {
+      "from": "owner",
+      "minute": 17,
+      "text": "No, the delivery arrived dry and on time."
+    },
+    {
+      "from": "assistant",
+      "minute": 18,
+      "text": "Good; there is no delivery delay to track."
+    },
+    {
+      "from": "peer",
+      "minute": 19,
+      "text": "The radio forecast sounded much worse."
+    },
+    {
+      "from": "owner",
+      "minute": 20,
+      "text": "That forecast was for the next town."
+    },
+    {
+      "from": "peer",
+      "minute": 21,
+      "text": "All right, back to the room setup."
+    },
+    {
+      "from": "owner",
+      "minute": 22,
+      "text": "For today only, leave the blue watering can beside gate three."
+    },
+    {
+      "from": "peer",
+      "minute": 23,
+      "text": "I will use that location today, then put it away."
+    },
+    {
+      "from": "assistant",
+      "minute": 24,
+      "text": "Only today; I will not treat that location as permanent."
+    },
+    {
+      "from": "owner",
+      "minute": 25,
+      "text": "Back to the date we discussed earlier."
+    },
+    {
+      "from": "peer",
+      "minute": 26,
+      "text": "Has the booking changed?"
+    },
+    {
+      "from": "owner",
+      "minute": 27,
+      "text": "Correction: the seed exchange moved to 2026-05-17, not May 10."
+    },
+    {
+      "from": "assistant",
+      "minute": 28,
+      "text": "The later correction takes precedence over the provisional date."
+    },
+    {
+      "from": "peer",
+      "minute": 29,
+      "text": "Thanks, that answers my scheduling question."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 16,
+      "response": {
+        "memories": [
+          {
+            "content": "Nadia Sol: I coordinate the seed library at Mossbank Garden.",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Nadia Sol",
+                "type": "person",
+                "matched_participant_key": "9200050"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Nadia Sol",
+                "field": "role",
+                "value": "seed library",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Nadia Sol: The seed exchange is on 2026-05-10.",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Nadia Sol",
+                "type": "person",
+                "matched_participant_key": "9200050"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "Nadia Sol",
+          "seed library"
+        ],
+        "subject": "Nadia Sol",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "seed library"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "Nadia Sol",
+          "2026-05-10"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "transient_location",
+        "kind": "transient",
+        "content_contains": [
+          "gate three"
+        ]
+      },
+      {
+        "id": "wrong_person",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Nadia Vale",
+          "seed library"
+        ]
+      },
+      {
+        "id": "weather_chatter",
+        "kind": "distractor",
+        "content_contains": [
+          "radio forecast"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable role or preference did Nadia Sol state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "peer",
+        "question": "What stable role or preference did Nadia Sol state?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 21,
+        "axes": [
+          "durable_vs_transient",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "seed library"
+        ],
+        "expect_subject": "Nadia Sol",
+        "wrong_subjects": [
+          "Nadia Vale"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "peer",
+        "question": "What did Nadia Sol, rather than Nadia Vale, say about their regular role or preference?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 21,
+        "axes": [
+          "overlapping_names",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "seed library"
+        ],
+        "expect_subject": "Nadia Sol",
+        "wrong_subjects": [
+          "Nadia Vale"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "peer",
+        "question": "Where is the item kept just for today?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          23
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 5,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "gate three"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "peer",
+        "question": "What is the current confirmed date after the correction?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          28
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 1,
+        "axes": [
+          "corrections_contradictions",
+          "stale_facts_updates",
+          "topic_switch_return"
+        ],
+        "prohibited": [
+          "2026-05-10"
+        ],
+        "expect_any": [
+          "2026-05-17"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "peer",
+        "question": "What is Nadia Sol's passport number?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Nadia Sol",
+        "type": "person",
+        "participant": "owner"
+      }
+    ]
+  }
+}

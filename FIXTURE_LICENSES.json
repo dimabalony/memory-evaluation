@@ -1,0 +1,110 @@
+{
+  "format": "memory-evaluation-fixture-licenses/v1",
+  "fixtures": [
+    {
+      "path": "tests/fixtures/elephant/canonical.json",
+      "sha256": "58d514cae756232d261b2a308eabc5c98d30f041a631963afa0b4e015b5c12c7",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "representative authored stimuli; not paper dataset"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/01-flatmates-group.json",
+      "sha256": "ec40fb90528e512f878071e19d3973acaf5900e8af2ac35526ff007767416e53",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/02-private-family-health.json",
+      "sha256": "11d8a35c9aa1d94cfaef7903c8c99d57014129c5e81dca2a0451ad935c2f3597",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/03-studio-team-topic.json",
+      "sha256": "a0609b3ff86430a435379e204fd8151e501b062dfd0331735016036f1fe1eceb",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/04-cross-script-household.json",
+      "sha256": "7bf08e83f6cf0851f8e7c063149ec9916fb614638a49f8ec06f72a735194ef30",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/05-volunteer-garden.json",
+      "sha256": "febc3f85a46c9e7105f6acd920d2e0d6da8749d00ba9615009f3bb07ba04a130",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/06-choir-rehearsal.json",
+      "sha256": "aaf3eba9486dfb4932d965851886e60a7ebcbd1d7d85021d21bd869ca2d68826",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/07-cycling-club.json",
+      "sha256": "d1f2aa760d77a8b8edaccdd876b480f2dee3193c957e43cd29a0f9392d8989b6",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/08-library-workshop.json",
+      "sha256": "78fa5cbbf269536b25ad75889dbf967fafea72483cdcce13611ccd17bf6af015",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/09-theatre-props.json",
+      "sha256": "4228d4403df656259ce8843f46c2fca4b6cd37f7f783bb26cad97f54211c2cdc",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/10-bakery-team.json",
+      "sha256": "422936e893b64ce652f1db4edbf41ca74b20cc2623528e6c79d504448997a143",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/11-robotics-team.json",
+      "sha256": "7d85fd9204daef52fc3fe0d51bec23249fd698c1ad86f40f189735bff22be688",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/12-ceramics-studio.json",
+      "sha256": "a58c9e31b5d418c9b5388d376b6f60382d6533646e915be169a53a666ff4b231",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/memory_m5/efficacy_preparation.json",
+      "sha256": "ccfd618a5128db7f519a0176d024e432ce987e14f45fec7a666d9b128584d693",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    },
+    {
+      "path": "tests/fixtures/priming_benchmark/dedup_pairs.json",
+      "sha256": "9d791a20a77631d977d15a3fe3f8c31751637613c5013753275de538a09c0dd7",
+      "license": "GPL-3.0-or-later",
+      "source": "authored-synthetic",
+      "scope": "reviewed synthetic test fixture"
+    }
+  ]
+}

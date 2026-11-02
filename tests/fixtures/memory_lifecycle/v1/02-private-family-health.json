@@ -1,0 +1,821 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "Claude (DB-840 implementor session)",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "e5a6894ef4d39341323395ea2f506101b4d8a0247eec2dcd40db3b4db213e589",
+    "pii": "none: fictional people, organisations and events; real city names used generically",
+    "license": "private-unlicensed"
+  },
+  "id": "lc-02-private-family-health",
+  "title": "A private chat with the admin: family and health facts mixed with transient chatter, a rejected assistant paraphrase, a corrected birthday",
+  "axes": [
+    "durable_vs_transient",
+    "continuation_anaphora",
+    "assistant_paraphrase_echo",
+    "corrections_contradictions",
+    "stale_facts_updates",
+    "abstention_control"
+  ],
+  "chat": {
+    "chat_id": 9200021,
+    "topic_id": null,
+    "is_group": false,
+    "title": null
+  },
+  "start_at": "2026-04-06T19:00:00+00:00",
+  "participants": [
+    {
+      "key": "p_oren",
+      "telegram_user_id": 9200021,
+      "name": "Oren Calloway",
+      "username": "orenc",
+      "admin": true
+    }
+  ],
+  "pre_state": {
+    "known_participants": [
+      "p_oren"
+    ],
+    "traces": [
+      {
+        "label": "pre_oren_dob",
+        "content": "Oren Calloway's birthday is 19 November",
+        "memory_type": "fact",
+        "significance": 4,
+        "age_days": 300,
+        "entities": [
+          {
+            "name": "Oren Calloway",
+            "type": "person",
+            "participant": "p_oren"
+          }
+        ],
+        "facts": [
+          {
+            "subject": "Oren Calloway",
+            "field": "birthday",
+            "value": "19 November",
+            "polarity": "is",
+            "slot": "date_of_birth",
+            "durability": "durable"
+          }
+        ]
+      }
+    ]
+  },
+  "messages": [
+    {
+      "from": "p_oren",
+      "minute": 0,
+      "text": "hey Kai, long day. can I dump some admin stuff on you so you remember it?"
+    },
+    {
+      "from": "assistant",
+      "minute": 1,
+      "text": "Of course, go ahead and I'll keep track."
+    },
+    {
+      "from": "p_oren",
+      "minute": 2,
+      "text": "my mum, Ilse, is having knee surgery on the 14th at St. Brennan's"
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Thanks for telling me. Is someone going with her on the 14th?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 4,
+      "text": "me, I'm taking the day off. she lives in Leeds so it's a 3 hour drive"
+    },
+    {
+      "from": "p_oren",
+      "minute": 5,
+      "text": "also my GP finally confirmed it: I have mild asthma. got an inhaler yesterday"
+    },
+    {
+      "from": "assistant",
+      "minute": 6,
+      "text": "Glad you have a diagnosis now. Do you want reminders for the inhaler?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 7,
+      "text": "no, it's only for when I run. which reminds me, the half marathon is in 9 weeks"
+    },
+    {
+      "from": "assistant",
+      "minute": 8,
+      "text": "Nine weeks is a good runway. Which half marathon is it?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 9,
+      "text": "the Harrowgate one, in June"
+    },
+    {
+      "from": "p_oren",
+      "minute": 10,
+      "text": "and I have a splitting headache right now, too much screen time"
+    },
+    {
+      "from": "assistant",
+      "minute": 11,
+      "text": "Sorry about the headache, maybe a break from screens tonight.\n[recalled while thinking] Oren said screen breaks help his eyes\nWant me to hold anything until tomorrow?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 12,
+      "text": "nah just keep it brief"
+    },
+    {
+      "from": "p_oren",
+      "minute": 14,
+      "text": "oh one more: I'm doing Portuguese lessons twice a week now, conversational level"
+    },
+    {
+      "from": "assistant",
+      "minute": 15,
+      "text": "Nice. Is that for the trip you mentioned?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 16,
+      "text": "yeah, two weeks in Lisbon and Porto in September"
+    },
+    {
+      "from": "assistant",
+      "minute": 17,
+      "text": "So you're planning to move to Portugal next year?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 18,
+      "text": "no no, just a holiday. not moving anywhere, I like my flat"
+    },
+    {
+      "from": "assistant",
+      "minute": 19,
+      "text": "Got it, just a holiday. Sorry for the mix-up."
+    },
+    {
+      "from": "p_oren",
+      "minute": 21,
+      "text": "my sister Hanne might join for the Porto leg"
+    },
+    {
+      "from": "assistant",
+      "minute": 22,
+      "text": "That would be fun. Does Hanne speak Portuguese too?"
+    },
+    {
+      "from": "p_oren",
+      "minute": 23,
+      "text": "she's fluent actually, she lived in Braga for years"
+    },
+    {
+      "from": "p_oren",
+      "minute": 30,
+      "text": "btw correction for your notes: my birthday is the 9th of November, not the 19th like I told you before"
+    },
+    {
+      "from": "assistant",
+      "minute": 31,
+      "text": "Thanks, I've corrected it to 9 November."
+    },
+    {
+      "from": "p_oren",
+      "minute": 32,
+      "text": "the parcel from the camera shop is arriving tomorrow, I'll need to be in"
+    },
+    {
+      "from": "assistant",
+      "minute": 33,
+      "text": "Noted for tomorrow."
+    },
+    {
+      "from": "p_oren",
+      "minute": 34,
+      "text": "what do you think, should I get a foam roller for the training?"
+    },
+    {
+      "from": "assistant",
+      "minute": 35,
+      "text": "Many runners find one helpful for recovery; a medium-density one is a safe start."
+    },
+    {
+      "from": "p_oren",
+      "minute": 36,
+      "text": "ok cool, ordering one"
+    },
+    {
+      "from": "p_oren",
+      "minute": 37,
+      "text": "night Kai"
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 14,
+      "response": {
+        "memories": [
+          {
+            "content": "Oren Calloway's mother Ilse is having knee surgery on the 14th at St. Brennan's; Oren is taking the day off to drive her",
+            "memory_type": "plan",
+            "significance": 4,
+            "emotion_valence": -0.2,
+            "emotion_arousal": 0.4,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              },
+              {
+                "name": "Ilse",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "St. Brennan's",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Oren Calloway",
+                "field": "mother",
+                "value": "mother: Ilse",
+                "polarity": "is",
+                "slot": "key_relationships",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Ilse",
+                "predicate": "parent_of",
+                "object": "Oren Calloway",
+                "confidence": 0.9
+              }
+            ],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Ilse, Oren's mother, lives in Leeds, about a three-hour drive away",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Ilse",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Leeds",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Ilse",
+                "field": "city",
+                "value": "Leeds",
+                "polarity": "is",
+                "slot": "current_location",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Oren Calloway was diagnosed with mild asthma by his GP and uses an inhaler when running",
+            "memory_type": "fact",
+            "significance": 4,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Oren Calloway",
+                "field": "condition",
+                "value": "mild asthma",
+                "polarity": "is",
+                "slot": "chronic_health_conditions",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Oren is training for the Harrowgate half marathon in June, nine weeks away",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": 0.3,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              },
+              {
+                "name": "Harrowgate half marathon",
+                "type": "event",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Oren Calloway is taking conversational Portuguese lessons twice a week",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Oren Calloway",
+                "field": "language",
+                "value": "Portuguese (learning, conversational)",
+                "polarity": "is",
+                "slot": "languages",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    },
+    {
+      "after": 30,
+      "response": {
+        "memories": [
+          {
+            "content": "Oren is going on a two-week holiday to Lisbon and Porto in September and is not planning to relocate",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": 0.5,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              },
+              {
+                "name": "Lisbon",
+                "type": "place",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Porto",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Oren Calloway's sister Hanne is fluent in Portuguese after living in Braga for years, and may join him for the Porto leg",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": 0.3,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              },
+              {
+                "name": "Hanne",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Braga",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Oren Calloway",
+                "field": "sister",
+                "value": "sister: Hanne",
+                "polarity": "is",
+                "slot": "key_relationships",
+                "durability": "durable"
+              },
+              {
+                "subject": "Hanne",
+                "field": "language",
+                "value": "Portuguese (fluent)",
+                "polarity": "is",
+                "slot": "languages",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Hanne",
+                "predicate": "sibling_of",
+                "object": "Oren Calloway",
+                "confidence": 0.9
+              }
+            ],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Oren Calloway's birthday is 9 November; he corrected the 19 November noted earlier",
+            "memory_type": "fact",
+            "significance": 4,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Oren Calloway",
+                "type": "person",
+                "matched_participant_key": "9200021"
+              }
+            ],
+            "contradicts_memory_id": "{{trace:pre_oren_dob}}",
+            "facts": [
+              {
+                "subject": "Oren Calloway",
+                "field": "birthday",
+                "value": "9 November",
+                "polarity": "is",
+                "slot": "date_of_birth",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.95,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "oren_mother",
+        "fact": {
+          "value_contains": "mother: Ilse"
+        },
+        "subject": "Oren Calloway",
+        "subject_participant": "p_oren",
+        "durable": true
+      },
+      {
+        "label": "ilse_location",
+        "fact": {
+          "value_contains": "Leeds"
+        },
+        "subject": "Ilse",
+        "durable": true
+      },
+      {
+        "label": "oren_asthma",
+        "fact": {
+          "value_contains": "asthma"
+        },
+        "subject": "Oren Calloway",
+        "subject_participant": "p_oren",
+        "durable": true
+      },
+      {
+        "label": "oren_half_marathon",
+        "content_contains": [
+          "Harrowgate"
+        ]
+      },
+      {
+        "label": "oren_portuguese",
+        "fact": {
+          "value_contains": "Portuguese (learning"
+        },
+        "subject": "Oren Calloway",
+        "subject_participant": "p_oren",
+        "durable": true
+      },
+      {
+        "label": "oren_trip",
+        "content_contains": [
+          "Lisbon",
+          "September"
+        ]
+      },
+      {
+        "label": "oren_sister",
+        "fact": {
+          "value_contains": "sister: Hanne"
+        },
+        "subject": "Oren Calloway",
+        "subject_participant": "p_oren",
+        "durable": true
+      },
+      {
+        "label": "hanne_language",
+        "fact": {
+          "value_contains": "Portuguese (fluent)"
+        },
+        "subject": "Hanne",
+        "durable": true
+      },
+      {
+        "label": "oren_dob_v2",
+        "fact": {
+          "value_contains": "9 November"
+        },
+        "subject": "Oren Calloway",
+        "subject_participant": "p_oren",
+        "durable": true
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "move_paraphrase",
+        "kind": "assistant_echo",
+        "content_contains": [
+          "move to Portugal"
+        ]
+      },
+      {
+        "id": "recalled_screen_breaks",
+        "kind": "recalled_echo",
+        "content_contains": [
+          "screen breaks"
+        ]
+      },
+      {
+        "id": "headache_today",
+        "kind": "transient",
+        "content_contains": [
+          "headache"
+        ]
+      },
+      {
+        "id": "parcel_tomorrow",
+        "kind": "transient",
+        "content_contains": [
+          "parcel"
+        ]
+      }
+    ],
+    "prompt_must_not_contain": [
+      {
+        "id": "recalled_line",
+        "kind": "recalled_echo",
+        "text": "screen breaks help his eyes"
+      }
+    ],
+    "supersessions": [
+      {
+        "old": "pre_oren_dob",
+        "new": "oren_dob_v2"
+      }
+    ],
+    "dedup": [
+      {
+        "id": "oren_one_row",
+        "names": [
+          "Oren Calloway"
+        ],
+        "type": "person",
+        "max_rows": 1
+      }
+    ],
+    "entities": [
+      {
+        "name": "Oren Calloway",
+        "type": "person",
+        "participant": "p_oren"
+      },
+      {
+        "name": "Ilse",
+        "type": "person",
+        "participant": null
+      },
+      {
+        "name": "Hanne",
+        "type": "person",
+        "participant": null
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_birthday",
+        "cue": "When is Oren Calloway's birthday?",
+        "expect_labels": [
+          "oren_dob_v2"
+        ],
+        "forbid_labels": [
+          "pre_oren_dob"
+        ]
+      },
+      {
+        "id": "rb_mother_surgery",
+        "cue": "When is Ilse's knee surgery?",
+        "expect_labels": [
+          "oren_mother"
+        ]
+      },
+      {
+        "id": "rb_move_echo",
+        "cue": "Is Oren planning to move to Portugal?",
+        "expect_labels": [
+          "oren_trip"
+        ],
+        "forbid_contains": [
+          "move to Portugal"
+        ]
+      },
+      {
+        "id": "rb_recalled_echo",
+        "cue": "Do screen breaks help Oren's eyes?",
+        "expect_labels": [],
+        "forbid_contains": [
+          "screen breaks"
+        ]
+      },
+      {
+        "id": "rb_abstain_blood_type",
+        "cue": "What is Oren Calloway's blood type?",
+        "expect_labels": [],
+        "forbid_contains": [
+          "blood type"
+        ]
+      }
+    ],
+    "prompt_must_contain": [
+      {
+        "id": "recalled_message_rest",
+        "text": "Want me to hold anything until tomorrow?"
+      },
+      {
+        "id": "recalled_message_head",
+        "text": "maybe a break from screens tonight"
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_birthday",
+        "asker": "p_oren",
+        "question": "When is my birthday?",
+        "history": "none",
+        "expect_any": [
+          "9 November"
+        ],
+        "prohibited": [
+          "birthday is 19 November"
+        ],
+        "axes": [
+          "corrections_contradictions",
+          "stale_facts_updates"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          23
+        ],
+        "memory_labels": [
+          "oren_dob_v2"
+        ],
+        "distance_user_turns": 4
+      },
+      {
+        "id": "q_moving",
+        "asker": "p_oren",
+        "question": "Am I planning to move to Portugal?",
+        "history": "none",
+        "expect_any": [
+          "not planning to relocate",
+          "holiday"
+        ],
+        "prohibited": [
+          "planning to move to Portugal"
+        ],
+        "axes": [
+          "assistant_paraphrase_echo"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          18
+        ],
+        "memory_labels": [
+          "oren_trip"
+        ],
+        "distance_user_turns": 7
+      },
+      {
+        "id": "q_mum_surgery",
+        "asker": "p_oren",
+        "question": "When is my mum Ilse's knee surgery?",
+        "history": "none",
+        "expect_any": [
+          "14th"
+        ],
+        "axes": [
+          "continuation_anaphora",
+          "durable_vs_transient"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "oren_mother"
+        ],
+        "distance_user_turns": 16
+      },
+      {
+        "id": "q_screen_breaks",
+        "asker": "p_oren",
+        "question": "Do screen breaks help my eyes?",
+        "history": "none",
+        "abstain": true,
+        "prohibited": [
+          "screen breaks help"
+        ],
+        "axes": [
+          "assistant_paraphrase_echo",
+          "abstention_control"
+        ],
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0
+      },
+      {
+        "id": "q_hanne_language",
+        "asker": "p_oren",
+        "question": "Does my sister Hanne speak Portuguese?",
+        "history": "full",
+        "expect_any": [
+          "fluent"
+        ],
+        "axes": [
+          "durable_vs_transient",
+          "continuation_anaphora"
+        ],
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          22
+        ],
+        "memory_labels": [
+          "hanne_language"
+        ],
+        "distance_user_turns": 5
+      }
+    ]
+  },
+  "split": "tuning"
+}

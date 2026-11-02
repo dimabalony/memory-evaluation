@@ -1,0 +1,118 @@
+{
+  "format": "kai-memory-procedural-preparation/v1",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-883",
+    "approved_by": null,
+    "version": 1,
+    "pii": false,
+    "content_sha256": "3acd129565bfac52a8d2e34df6294ced3ea17f5025ae4e5c834ae3310e61e827"
+  },
+  "hosts": [
+    "atlas",
+    "kai"
+  ],
+  "repeats": 3,
+  "model_settings": {
+    "model": "pending-approved-pilot",
+    "max_tokens": 256,
+    "thinking_mode": "disabled",
+    "temperature": 0,
+    "provider": "pending-approved-pilot"
+  },
+  "calibration": {
+    "status": "unmeasured",
+    "required": "Blind human labels for applicability and followed/violated/misapplied; judge agreement and disagreements before semantic acceptance.",
+    "procedure": [
+      "Freeze exact provider/model/account, SDK SHA, rule fixture hash, prompt, token limit and thinking mode before any calls.",
+      "Blind ON/OFF and repeat labels; label each answer for applicability, followed/violated/not_applicable/misapplied, and malformed/failed answers separately.",
+      "Have a human independently label the same fixed window; preserve raw judge verdicts and count agreement/disagreements and invalid verdicts.",
+      "Resolve calibration disagreements before interpreting efficacy; scripted answers test plumbing only.",
+      "Report eligible, labeled applicable, valid, invalid, unrun and not-applicable denominators, per-repeat deltas/variance, measured/missing latency and actual/unknown cost."
+    ]
+  },
+  "cases": [
+    {
+      "id": "concise-summary",
+      "rule": "When asked for a summary, answer in at most two sentences.",
+      "category": "communication",
+      "trigger": "A summary is requested",
+      "violation_window": {
+        "start_turn": 1,
+        "end_turn": 3
+      },
+      "turns": [
+        {
+          "id": 1,
+          "input": "Summarize why leaves change color in autumn.",
+          "applicable": true
+        },
+        {
+          "id": 2,
+          "input": "Summarize how a bicycle brake works.",
+          "applicable": true
+        },
+        {
+          "id": 3,
+          "input": "Write a four-line poem about a bicycle.",
+          "applicable": false
+        }
+      ]
+    },
+    {
+      "id": "corrected-format",
+      "rule": "When comparing options, use prose with no markdown table.",
+      "category": "format",
+      "trigger": "Comparing options",
+      "superseded_rule": "When comparing options, always use a markdown table.",
+      "violation_window": {
+        "start_turn": 1,
+        "end_turn": 3
+      },
+      "turns": [
+        {
+          "id": 1,
+          "input": "Compare walking and cycling for a short commute.",
+          "applicable": true
+        },
+        {
+          "id": 2,
+          "input": "Compare paper notebooks and digital notes.",
+          "applicable": true
+        },
+        {
+          "id": 3,
+          "input": "What is seven plus five?",
+          "applicable": false
+        }
+      ]
+    },
+    {
+      "id": "explicit-unknown",
+      "rule": "When a requested date is absent from the supplied facts, explicitly say the date is unknown.",
+      "category": "communication",
+      "trigger": "A requested date is absent from the facts",
+      "violation_window": {
+        "start_turn": 1,
+        "end_turn": 3
+      },
+      "turns": [
+        {
+          "id": 1,
+          "input": "Facts: Cedar Library will reopen after repairs. What day will it reopen?",
+          "applicable": true
+        },
+        {
+          "id": 2,
+          "input": "Facts: The synthetic Fern Club event has been postponed. What is its new date?",
+          "applicable": true
+        },
+        {
+          "id": 3,
+          "input": "Facts: Cedar Library reopens on 8 November. What is the reopening date?",
+          "applicable": false
+        }
+      ]
+    }
+  ]
+}

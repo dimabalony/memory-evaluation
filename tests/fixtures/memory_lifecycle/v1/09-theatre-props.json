@@ -1,0 +1,473 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-09-theatre-props",
+  "title": "Theatre: provisional versus confirmed date, role reassignment and distinct actor attribution",
+  "split": "held_out",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "52e632e096e5beb5a7907bdf37dd54f39f8b1faea09282366f5eb23d8e8f6adf",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "corrections_contradictions",
+    "durable_vs_transient",
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": -1009000000109,
+    "topic_id": null,
+    "is_group": true,
+    "title": "theatre crew"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200090,
+      "name": "Dara Iliev",
+      "admin": true
+    },
+    {
+      "key": "peer",
+      "telegram_user_id": 9200091,
+      "name": "Daria Iliev",
+      "admin": false
+    }
+  ],
+  "messages": [
+    {
+      "from": "peer",
+      "minute": 0,
+      "text": "Could we sort the costume cupboard before rehearsal?"
+    },
+    {
+      "from": "owner",
+      "minute": 3,
+      "text": "Yes, but there is a safety detail first."
+    },
+    {
+      "from": "owner",
+      "minute": 6,
+      "text": "I am allergic to latex. Please order nitrile gloves for me."
+    },
+    {
+      "from": "assistant",
+      "minute": 9,
+      "text": "Nitrile gloves for Dara Iliev; noted."
+    },
+    {
+      "from": "peer",
+      "minute": 12,
+      "text": "I nearly ordered actor gloves for Daria Iliev instead. Different person!"
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Exactly. Daria is in the cast; I work with the backstage team."
+    },
+    {
+      "from": "owner",
+      "minute": 18,
+      "text": "The opening remains 2026-09-12 for now."
+    },
+    {
+      "from": "peer",
+      "minute": 21,
+      "text": "We still need to borrow a dressing mirror."
+    },
+    {
+      "from": "owner",
+      "minute": 24,
+      "text": "The dance school can lend one, but only after six."
+    },
+    {
+      "from": "assistant",
+      "minute": 27,
+      "text": "I have the glove requirement and provisional opening date."
+    },
+    {
+      "from": "peer",
+      "minute": 30,
+      "text": "The old mirror stand is missing a wheel."
+    },
+    {
+      "from": "owner",
+      "minute": 33,
+      "text": "Put it aside rather than trying to balance it."
+    },
+    {
+      "from": "peer",
+      "minute": 36,
+      "text": "Should the crown have a ribbon under it?"
+    },
+    {
+      "from": "owner",
+      "minute": 39,
+      "text": "Ask Daria; it is her costume, not mine."
+    },
+    {
+      "from": "peer",
+      "minute": 42,
+      "text": "She says the wig covers the fastening."
+    },
+    {
+      "from": "owner",
+      "minute": 45,
+      "text": "Then leave the crown as it is."
+    },
+    {
+      "from": "assistant",
+      "minute": 48,
+      "text": "No crown alteration requested."
+    },
+    {
+      "from": "peer",
+      "minute": 51,
+      "text": "Unrelated: the interval music has been changed."
+    },
+    {
+      "from": "owner",
+      "minute": 54,
+      "text": "Fine, I am not responsible for the music cues."
+    },
+    {
+      "from": "peer",
+      "minute": 57,
+      "text": "Where should I put the silver crown this afternoon?"
+    },
+    {
+      "from": "owner",
+      "minute": 60,
+      "text": "Only this afternoon, leave it on the portable costume rail."
+    },
+    {
+      "from": "peer",
+      "minute": 63,
+      "text": "I will return it to storage after the run-through."
+    },
+    {
+      "from": "owner",
+      "minute": 66,
+      "text": "Back to the opening: the venue offered September 19."
+    },
+    {
+      "from": "peer",
+      "minute": 69,
+      "text": "Is that confirmed, or only an offer?"
+    },
+    {
+      "from": "owner",
+      "minute": 72,
+      "text": "Only an offer; keep September 12 until I confirm."
+    },
+    {
+      "from": "peer",
+      "minute": 75,
+      "text": "And which backstage jobs still come to you?"
+    },
+    {
+      "from": "owner",
+      "minute": 78,
+      "text": "This changed yesterday: I no longer coordinate props."
+    },
+    {
+      "from": "owner",
+      "minute": 81,
+      "text": "From 2026-09-01 I am the lighting designer. Please send prop questions to Olek."
+    },
+    {
+      "from": "peer",
+      "minute": 84,
+      "text": "So Daria acts, Olek handles props, and you design lighting?"
+    },
+    {
+      "from": "owner",
+      "minute": 87,
+      "text": "Yes. Also, the venue just confirmed opening on 2026-09-19; September 12 is cancelled."
+    },
+    {
+      "from": "assistant",
+      "minute": 90,
+      "text": "The explicit confirmation replaces the earlier provisional date."
+    },
+    {
+      "from": "peer",
+      "minute": 93,
+      "text": "Good; I will tell the cast after rehearsal."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 10,
+      "response": {
+        "memories": [
+          {
+            "content": "Dara Iliev: allergic to latex",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Dara Iliev",
+                "type": "person",
+                "matched_participant_key": "9200090"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Dara Iliev",
+                "field": "allergy",
+                "value": "allergic to latex",
+                "polarity": "is",
+                "slot": "allergies",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Opening night is 2026-09-12",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Dara Iliev",
+                "type": "person",
+                "matched_participant_key": "9200090"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "allergic to latex"
+        ],
+        "subject": "Dara Iliev",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "allergic to latex"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "Opening night is 2026-09-12"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "wrong_actor_allergy",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Daria Iliev",
+          "latex"
+        ]
+      },
+      {
+        "id": "temporary_crown",
+        "kind": "transient",
+        "content_contains": [
+          "portable costume rail"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable fact did Dara Iliev state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "peer",
+        "question": "Which glove material must Dara avoid?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 25,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "latex"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "peer",
+        "question": "Is Dara Iliev or Daria Iliev the person with a latex allergy?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 25,
+        "axes": [
+          "overlapping_names",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Dara Iliev"
+        ],
+        "expect_subject": "Dara Iliev",
+        "wrong_subjects": [
+          "Daria Iliev"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "peer",
+        "question": "Where should the silver crown be this afternoon?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          21
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 10,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "portable costume rail"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "peer",
+        "question": "What backstage role does Dara have now?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          27,
+          28
+        ],
+        "memory_labels": [
+          "pre_role"
+        ],
+        "distance_user_turns": 3,
+        "axes": [
+          "corrections_contradictions",
+          "stale_facts_updates"
+        ],
+        "prohibited": [
+          "props coordinator"
+        ],
+        "expect_any": [
+          "lighting designer"
+        ]
+      },
+      {
+        "id": "q_date",
+        "asker": "peer",
+        "question": "Which opening date was actually confirmed after the venue offer?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          23,
+          25,
+          30
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 1,
+        "axes": [
+          "topic_switch_return",
+          "corrections_contradictions"
+        ],
+        "prohibited": [
+          "2026-09-12"
+        ],
+        "expect_any": [
+          "2026-09-19"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "peer",
+        "question": "What is Olek’s surname?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Dara Iliev",
+        "type": "person",
+        "participant": "owner"
+      }
+    ]
+  },
+  "pre_state": {
+    "known_participants": [
+      "owner"
+    ],
+    "traces": [
+      {
+        "label": "pre_role",
+        "content": "Dara Iliev is the props coordinator at Pebble Theatre",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 90,
+        "entities": [
+          {
+            "name": "Dara Iliev",
+            "type": "person",
+            "participant": "owner"
+          }
+        ]
+      }
+    ]
+  }
+}

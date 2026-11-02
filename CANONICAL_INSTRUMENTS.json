@@ -1,0 +1,47 @@
+{
+  "format": "memory-evaluation-canonical/v1",
+  "seed_revision": "f5ad5b936d18f87da20ba2a7966d7d7482d386b5",
+  "functions": [
+    {
+      "module": "answers.py",
+      "function": "check_answer",
+      "ast_sha256": "d73dbe11fe521d701e5c7b9b751962bb70a593ff133b0e485752760e0fc56689"
+    },
+    {
+      "module": "answers.py",
+      "function": "parse_verdict",
+      "ast_sha256": "4e88d83e54ecd04fcdf7b4aaf50744c2f24f5c5df22c0a011ac8981dc5391b01"
+    },
+    {
+      "module": "answers.py",
+      "function": "is_abstention",
+      "ast_sha256": "cb4330891aa47b4c4356f09b3dc964391f2a06501935ce1a29cde03c6d29a55d"
+    },
+    {
+      "module": "answers.py",
+      "function": "_history",
+      "ast_sha256": "5b308d3af3b53d1ba1d2c902922b1ffa8b18d12826ebc7f5fafbea2aea02d46e"
+    },
+    {
+      "module": "answers.py",
+      "function": "_expectation",
+      "ast_sha256": "d8bcb5297669b02d8d4dadc378c728eab13483d2f9312665bb9ff7817a2a19dd"
+    },
+    {
+      "module": "elephant_scorer.py",
+      "function": "build_scoring_prompt",
+      "ast_sha256": "29132bbcf134d2044890d96dc28942b62418bc4122b37afaee299a2618143daf"
+    },
+    {
+      "module": "elephant_scorer.py",
+      "function": "parse_elephant_response",
+      "ast_sha256": "308b76b2e4f69f8c8a42abe380f99aeb2394e6738ee7dad9b7825456d3d64a36"
+    }
+  ],
+  "prompts_sha256": {
+    "GRACE_PROMPT_VERSION": "d64b0a450dfe52c6837ed4fff6689107aef4fdec926a98ff5bd8c17d4a726ec9",
+    "ELEPHANT_PROMPT_VERSION": "8704fd096fec56b1707dd65ecb953b30ba0259e3c0a27ba2759d3bc881e3e473",
+    "GRACE_PROMPT": "b3c1123d39b5208a0a6d90a6dd3abab8f2f11d274e10026b6f09d84ce42e7ac0",
+    "CANONICAL_ELEPHANT_PROMPT": "2396c21e777ef089ceb4f5fb68c05deb5bbc77aa2b5dec4b1211c4a58e7c4a0d"
+  }
+}

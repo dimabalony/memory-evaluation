@@ -1,0 +1,555 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "Claude (DB-840 implementor session)",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "57353954063b0a8b2bd2dfaa4be0ca3e1787ed9bf1adf850e249a184fe1868c9",
+    "pii": "none: fictional people, organisations and events; real city names used generically",
+    "license": "private-unlicensed"
+  },
+  "id": "lc-03-studio-team-topic",
+  "title": "A work-team forum topic with near-identical names, a lunch detour and a return to the launch; the recorded response carries three realistic extractor mistakes",
+  "notes": "The recorded responses are deliberately imperfect, as a real Haiku answer can be: Rosa's new title is never extracted (an omission), Sami's move is attributed to Sam (a misattribution between near-identical names), and Kai's own suggestion to move the launch is stored as a team decision (an assistant echo). The labels below are the truth; the scoreboard must report all three.",
+  "axes": [
+    "topic_switch_return",
+    "distractor_topics",
+    "group_sender_attribution",
+    "overlapping_names",
+    "assistant_paraphrase_echo"
+  ],
+  "chat": {
+    "chat_id": -1009000000303,
+    "topic_id": 41,
+    "is_group": true,
+    "title": "Fernhill studio"
+  },
+  "start_at": "2026-05-15T08:30:00+00:00",
+  "participants": [
+    {
+      "key": "p_sam",
+      "telegram_user_id": 9300031,
+      "name": "Sam Adeyemi",
+      "username": "sam_ade",
+      "admin": false
+    },
+    {
+      "key": "p_sami",
+      "telegram_user_id": 9300032,
+      "name": "Sami Laine",
+      "username": "samilaine",
+      "admin": false
+    },
+    {
+      "key": "p_rosa",
+      "telegram_user_id": 9300033,
+      "name": "Rosa Brandt",
+      "username": "rosab",
+      "admin": false
+    }
+  ],
+  "pre_state": {
+    "known_participants": [
+      "p_sam",
+      "p_sami",
+      "p_rosa"
+    ],
+    "traces": []
+  },
+  "messages": [
+    {
+      "from": "p_rosa",
+      "minute": 0,
+      "text": "morning team. launch planning thread: where are we on the Kestrel Outdoor site?"
+    },
+    {
+      "from": "p_sam",
+      "minute": 1,
+      "text": "homepage is done, product pages are about 70%"
+    },
+    {
+      "from": "p_sami",
+      "minute": 2,
+      "text": "copy for the product pages lands tomorrow, I'm waiting on the client's sizing chart"
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Current target is the launch on the 12th. Want me to track the sizing chart as a blocker?"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 4,
+      "text": "yes please. and fyi I'm officially art director as of this week, so sign-offs come to me"
+    },
+    {
+      "from": "p_sam",
+      "minute": 5,
+      "text": "congrats Rosa!!"
+    },
+    {
+      "from": "p_sami",
+      "minute": 6,
+      "text": "🎉"
+    },
+    {
+      "from": "p_sam",
+      "minute": 8,
+      "text": "ok lunch? the ramen place or the falafel truck"
+    },
+    {
+      "from": "p_sami",
+      "minute": 9,
+      "text": "falafel, ramen queue is insane on fridays"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 10,
+      "text": "falafel. also who keeps playing that synthwave playlist on the office speaker lol"
+    },
+    {
+      "from": "p_sam",
+      "minute": 11,
+      "text": "guilty"
+    },
+    {
+      "from": "assistant",
+      "minute": 12,
+      "text": "Falafel it is. If the sizing chart slips, you could move the launch to the 18th."
+    },
+    {
+      "from": "p_rosa",
+      "minute": 13,
+      "text": "let's not move anything yet, we hold the 12th unless the client is late"
+    },
+    {
+      "from": "p_sami",
+      "minute": 14,
+      "text": "agree, hold the 12th"
+    },
+    {
+      "from": "p_sami",
+      "minute": 40,
+      "text": "separate news: I'm moving to the Helsinki office in January, it's official"
+    },
+    {
+      "from": "p_sam",
+      "minute": 41,
+      "text": "noooo. but also nice, you've wanted that for ages"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 42,
+      "text": "we'll miss you Sami. we'll sort a handover plan for Kestrel"
+    },
+    {
+      "from": "assistant",
+      "minute": 43,
+      "text": "Congratulations, Sami. Shall I draft a handover checklist for the Kestrel account?"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 44,
+      "text": "yes, due before christmas"
+    },
+    {
+      "from": "p_sam",
+      "minute": 46,
+      "text": "back to launch: client just sent the sizing chart 🙌"
+    },
+    {
+      "from": "p_sami",
+      "minute": 47,
+      "text": "great, copy will be in by end of day then"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 48,
+      "text": "so we're green for the 12th"
+    },
+    {
+      "from": "assistant",
+      "minute": 49,
+      "text": "Great, the sizing chart blocker is cleared and the launch stays on the 12th."
+    },
+    {
+      "from": "p_sam",
+      "minute": 50,
+      "text": "I'll do a final QA pass on mobile thursday"
+    },
+    {
+      "from": "p_rosa",
+      "minute": 51,
+      "text": "perfect"
+    },
+    {
+      "from": "p_sami",
+      "minute": 52,
+      "text": "👍"
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 14,
+      "response": {
+        "memories": [
+          {
+            "content": "The Kestrel Outdoor site launch is held on the 12th unless the client is late; the homepage is done and product pages are about 70% complete",
+            "memory_type": "decision",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Kestrel Outdoor",
+                "type": "organization",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Rosa Brandt",
+                "type": "person",
+                "matched_participant_key": "9300033"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "The team agreed the Kestrel launch could move to the 18th if the sizing chart slips",
+            "memory_type": "decision",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Kestrel Outdoor",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.6,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Product page copy for Kestrel is blocked on the client's sizing chart",
+            "memory_type": "fact",
+            "significance": 2,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Sami Laine",
+                "type": "person",
+                "matched_participant_key": "9300032"
+              },
+              {
+                "name": "Kestrel Outdoor",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": [
+          {
+            "experience": "Rosa declined Kai's suggestion to move the launch date pre-emptively",
+            "learned_norm": "Do not propose date changes before a blocker actually slips",
+            "signal_type": "correction"
+          }
+        ]
+      }
+    },
+    {
+      "after": 26,
+      "response": {
+        "memories": [
+          {
+            "content": "Sam Adeyemi is moving to the Helsinki office in January",
+            "memory_type": "status_change",
+            "significance": 4,
+            "emotion_valence": 0.4,
+            "emotion_arousal": 0.4,
+            "entities": [
+              {
+                "name": "Sam Adeyemi",
+                "type": "person",
+                "matched_participant_key": "9300031"
+              },
+              {
+                "name": "Helsinki",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Sam Adeyemi",
+                "field": "office",
+                "value": "Helsinki office from January",
+                "polarity": "is",
+                "slot": "off_schema",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.7,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "A handover checklist for the Kestrel account is due before Christmas because Sami Laine is leaving the team",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Sami Laine",
+                "type": "person",
+                "matched_participant_key": "9300032"
+              },
+              {
+                "name": "Rosa Brandt",
+                "type": "person",
+                "matched_participant_key": "9300033"
+              },
+              {
+                "name": "Kestrel Outdoor",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "The client sent the sizing chart, clearing the blocker; the Kestrel launch stays on the 12th and Sam Adeyemi will run a mobile QA pass on Thursday",
+            "memory_type": "status_change",
+            "significance": 3,
+            "emotion_valence": 0.5,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Sam Adeyemi",
+                "type": "person",
+                "matched_participant_key": "9300031"
+              },
+              {
+                "name": "Kestrel Outdoor",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "launch_date",
+        "content_contains": [
+          "Kestrel",
+          "12th"
+        ]
+      },
+      {
+        "label": "rosa_title",
+        "fact": {
+          "value_contains": "art director"
+        },
+        "subject": "Rosa Brandt",
+        "subject_participant": "p_rosa",
+        "durable": true
+      },
+      {
+        "label": "sizing_blocker",
+        "content_contains": [
+          "sizing chart"
+        ]
+      },
+      {
+        "label": "sami_relocation",
+        "fact": {
+          "value_contains": "Helsinki"
+        },
+        "subject": "Sami Laine",
+        "subject_participant": "p_sami"
+      },
+      {
+        "label": "handover_plan",
+        "content_contains": [
+          "handover"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "launch_moved_echo",
+        "kind": "assistant_echo",
+        "content_contains": [
+          "18th"
+        ]
+      },
+      {
+        "id": "lunch_choice",
+        "kind": "distractor",
+        "content_contains": [
+          "falafel"
+        ]
+      },
+      {
+        "id": "office_playlist",
+        "kind": "distractor",
+        "content_contains": [
+          "synthwave"
+        ]
+      }
+    ],
+    "dedup": [
+      {
+        "id": "sam_one_row",
+        "names": [
+          "Sam Adeyemi"
+        ],
+        "type": "person",
+        "max_rows": 1
+      },
+      {
+        "id": "sami_one_row",
+        "names": [
+          "Sami Laine"
+        ],
+        "type": "person",
+        "max_rows": 1
+      }
+    ],
+    "entities": [
+      {
+        "name": "Sam Adeyemi",
+        "type": "person",
+        "participant": "p_sam"
+      },
+      {
+        "name": "Sami Laine",
+        "type": "person",
+        "participant": "p_sami"
+      },
+      {
+        "name": "Rosa Brandt",
+        "type": "person",
+        "participant": "p_rosa"
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_launch_date",
+        "cue": "When is the Kestrel Outdoor launch?",
+        "expect_labels": [
+          "launch_date"
+        ],
+        "forbid_contains": [
+          "18th"
+        ]
+      },
+      {
+        "id": "rb_helsinki",
+        "cue": "Who is moving to the Helsinki office?",
+        "expect_labels": [
+          "sami_relocation"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_launch_date",
+        "asker": "p_sam",
+        "question": "When is the Kestrel Outdoor launch?",
+        "history": "none",
+        "expect_any": [
+          "12th"
+        ],
+        "prohibited": [
+          "18th"
+        ],
+        "axes": [
+          "topic_switch_return",
+          "assistant_paraphrase_echo"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          22
+        ],
+        "memory_labels": [
+          "launch_date"
+        ],
+        "distance_user_turns": 3
+      },
+      {
+        "id": "q_helsinki",
+        "asker": "p_rosa",
+        "question": "Who is moving to the Helsinki office?",
+        "history": "none",
+        "expect_any": [
+          "Sami"
+        ],
+        "prohibited": [
+          "Sam Adeyemi is moving"
+        ],
+        "axes": [
+          "group_sender_attribution",
+          "overlapping_names"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          15
+        ],
+        "memory_labels": [
+          "sami_relocation"
+        ],
+        "distance_user_turns": 9
+      },
+      {
+        "id": "q_lunch_abstain",
+        "asker": "p_sami",
+        "question": "What is Rosa Brandt's favourite lunch place?",
+        "history": "none",
+        "abstain": true,
+        "prohibited": [
+          "falafel"
+        ],
+        "axes": [
+          "distractor_topics",
+          "abstention_control"
+        ],
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0
+      }
+    ]
+  },
+  "split": "held_out"
+}

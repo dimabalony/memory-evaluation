@@ -1,0 +1,432 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-06-choir-rehearsal",
+  "title": "choir committee: overlapping names, multilingual facts and a late unextracted correction",
+  "split": "tuning",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "7f401746a2e516895f1ff20e7262cb2a53b4ec378ba38c5173fca460da35561a",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "continuation_anaphora",
+    "corrections_contradictions",
+    "distractor_topics",
+    "durable_vs_transient",
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": -1009000000106,
+    "topic_id": null,
+    "is_group": true,
+    "title": "choir committee"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200060,
+      "name": "Luis Prado",
+      "admin": true
+    },
+    {
+      "key": "peer",
+      "telegram_user_id": 9200061,
+      "name": "Luisa Prado",
+      "admin": false
+    }
+  ],
+  "messages": [
+    {
+      "from": "owner",
+      "minute": 0,
+      "text": "Quick update for the choir committee chat."
+    },
+    {
+      "from": "peer",
+      "minute": 1,
+      "text": "Go ahead; I am sorting the shared supplies."
+    },
+    {
+      "from": "owner",
+      "minute": 2,
+      "text": "Soy barítono del coro Brisa desde 2022."
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Understood: Luis Prado says Soy barítono del coro Brisa desde 2022."
+    },
+    {
+      "from": "peer",
+      "minute": 4,
+      "text": "To keep us separate: I am Luisa Prado, and that is not my role or preference."
+    },
+    {
+      "from": "owner",
+      "minute": 5,
+      "text": "El ensayo será el 3 de junio de 2026."
+    },
+    {
+      "from": "assistant",
+      "minute": 6,
+      "text": "I will keep that provisional date in the notes."
+    },
+    {
+      "from": "peer",
+      "minute": 7,
+      "text": "¿Quién tiene las partituras nuevas?"
+    },
+    {
+      "from": "owner",
+      "minute": 8,
+      "text": "Las dejé junto al piano."
+    },
+    {
+      "from": "peer",
+      "minute": 9,
+      "text": "La fotocopiadora vuelve a atascarse."
+    },
+    {
+      "from": "owner",
+      "minute": 10,
+      "text": "Podemos usar la de la biblioteca."
+    },
+    {
+      "from": "assistant",
+      "minute": 11,
+      "text": "We can return to the schedule once the supplies are sorted."
+    },
+    {
+      "from": "peer",
+      "minute": 12,
+      "text": "No hace falta imprimir la portada."
+    },
+    {
+      "from": "owner",
+      "minute": 13,
+      "text": "El afinador se quedó sin pilas."
+    },
+    {
+      "from": "peer",
+      "minute": 14,
+      "text": "Tengo unas de repuesto en la mochila."
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Abramos las ventanas antes de cantar."
+    },
+    {
+      "from": "peer",
+      "minute": 16,
+      "text": "Did the weather affect the delivery?"
+    },
+    {
+      "from": "owner",
+      "minute": 17,
+      "text": "No, the delivery arrived dry and on time."
+    },
+    {
+      "from": "assistant",
+      "minute": 18,
+      "text": "Good; there is no delivery delay to track."
+    },
+    {
+      "from": "peer",
+      "minute": 19,
+      "text": "The radio forecast sounded much worse."
+    },
+    {
+      "from": "owner",
+      "minute": 20,
+      "text": "That forecast was for the next town."
+    },
+    {
+      "from": "peer",
+      "minute": 21,
+      "text": "All right, back to the room setup."
+    },
+    {
+      "from": "owner",
+      "minute": 22,
+      "text": "Solo hoy, la llave está en el sobre amarillo."
+    },
+    {
+      "from": "peer",
+      "minute": 23,
+      "text": "I will use that location today, then put it away."
+    },
+    {
+      "from": "assistant",
+      "minute": 24,
+      "text": "Only today; I will not treat that location as permanent."
+    },
+    {
+      "from": "owner",
+      "minute": 25,
+      "text": "Back to the date we discussed earlier."
+    },
+    {
+      "from": "peer",
+      "minute": 26,
+      "text": "Has the booking changed?"
+    },
+    {
+      "from": "owner",
+      "minute": 27,
+      "text": "Corrección: el ensayo será el 5 de junio de 2026, no el día 3."
+    },
+    {
+      "from": "assistant",
+      "minute": 28,
+      "text": "The later correction takes precedence over the provisional date."
+    },
+    {
+      "from": "peer",
+      "minute": 29,
+      "text": "Thanks, that answers my scheduling question."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 16,
+      "response": {
+        "memories": [
+          {
+            "content": "Luis Prado: Soy barítono del coro Brisa desde 2022.",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Luis Prado",
+                "type": "person",
+                "matched_participant_key": "9200060"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Luis Prado",
+                "field": "choir_role",
+                "value": "barítono",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Luis Prado: El ensayo será el 3 de junio de 2026.",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Luis Prado",
+                "type": "person",
+                "matched_participant_key": "9200060"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "Luis Prado",
+          "barítono"
+        ],
+        "subject": "Luis Prado",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "barítono"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "Luis Prado",
+          "3 de junio"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "transient_location",
+        "kind": "transient",
+        "content_contains": [
+          "sobre amarillo"
+        ]
+      },
+      {
+        "id": "wrong_person",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Luisa Prado",
+          "barítono"
+        ]
+      },
+      {
+        "id": "weather_chatter",
+        "kind": "distractor",
+        "content_contains": [
+          "radio forecast"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable role or preference did Luis Prado state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "peer",
+        "question": "What stable role or preference did Luis Prado state?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 21,
+        "axes": [
+          "durable_vs_transient",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "barítono"
+        ],
+        "expect_subject": "Luis Prado",
+        "wrong_subjects": [
+          "Luisa Prado"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "peer",
+        "question": "What did Luis Prado, rather than Luisa Prado, say about their regular role or preference?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          3
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 21,
+        "axes": [
+          "overlapping_names",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "barítono"
+        ],
+        "expect_subject": "Luis Prado",
+        "wrong_subjects": [
+          "Luisa Prado"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "peer",
+        "question": "Where is the item kept just for today?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          23
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 5,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "sobre amarillo"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "peer",
+        "question": "What is the current confirmed date after the correction?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          28
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 1,
+        "axes": [
+          "corrections_contradictions",
+          "stale_facts_updates",
+          "topic_switch_return"
+        ],
+        "prohibited": [
+          "3 de junio"
+        ],
+        "expect_any": [
+          "5 de junio"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "peer",
+        "question": "What is Luis Prado's passport number?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Luis Prado",
+        "type": "person",
+        "participant": "owner"
+      }
+    ]
+  }
+}

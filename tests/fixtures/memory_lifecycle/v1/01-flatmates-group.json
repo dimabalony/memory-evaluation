@@ -1,0 +1,906 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "Claude (DB-840 implementor session)",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "0f405f12e8d98d4cad1e9f7899de1308e30d535933cb6296af91b1ca7a39ff70",
+    "pii": "none: fictional people, organisations and events; real city names used generically",
+    "license": "private-unlicensed"
+  },
+  "id": "lc-01-flatmates-group",
+  "title": "Three flatmates in a group chat: a job change, a sister who shares a flatmate's first name, a corrected occupation",
+  "axes": [
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "corrections_contradictions",
+    "distractor_topics",
+    "continuation_anaphora",
+    "abstention_control"
+  ],
+  "chat": {
+    "chat_id": -1009000000101,
+    "topic_id": null,
+    "is_group": true,
+    "title": "Harbor Street flat"
+  },
+  "start_at": "2026-03-02T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "p_teo",
+      "telegram_user_id": 9100011,
+      "name": "Teodora Valk",
+      "username": "teo_valk",
+      "admin": true
+    },
+    {
+      "key": "p_bram",
+      "telegram_user_id": 9100012,
+      "name": "Bram Okafor",
+      "username": "bram_ok",
+      "admin": false
+    },
+    {
+      "key": "p_mila",
+      "telegram_user_id": 9100013,
+      "name": "Mila Horvat",
+      "username": "milah",
+      "admin": false
+    }
+  ],
+  "pre_state": {
+    "known_participants": [
+      "p_teo",
+      "p_bram",
+      "p_mila"
+    ],
+    "traces": [
+      {
+        "label": "pre_teo_employer",
+        "content": "Teodora Valk works as a logistics planner at Larkspur Freight",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 210,
+        "entities": [
+          {
+            "name": "Teodora Valk",
+            "type": "person",
+            "participant": "p_teo"
+          },
+          {
+            "name": "Larkspur Freight",
+            "type": "organization"
+          }
+        ],
+        "facts": [
+          {
+            "subject": "Teodora Valk",
+            "field": "employer",
+            "value": "Larkspur Freight",
+            "polarity": "is",
+            "slot": "employer",
+            "durability": "durable"
+          }
+        ]
+      },
+      {
+        "label": "pre_bram_hometown",
+        "content": "Bram Okafor grew up in Rotterdam",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 120,
+        "entities": [
+          {
+            "name": "Bram Okafor",
+            "type": "person",
+            "participant": "p_bram"
+          },
+          {
+            "name": "Rotterdam",
+            "type": "place"
+          }
+        ],
+        "facts": [
+          {
+            "subject": "Bram Okafor",
+            "field": "hometown",
+            "value": "Rotterdam",
+            "polarity": "is",
+            "slot": "hometown",
+            "durability": "durable"
+          }
+        ]
+      }
+    ]
+  },
+  "messages": [
+    {
+      "from": "p_teo",
+      "minute": 0,
+      "text": "morning all. Kai, quick one before work: can you remind us the bin rota for this week?"
+    },
+    {
+      "from": "assistant",
+      "minute": 1,
+      "text": "Morning! This week Bram is on bins, Mila has the recycling, and Teodora is on the kitchen deep-clean."
+    },
+    {
+      "from": "p_bram",
+      "minute": 2,
+      "text": "ugh fine. also heads up, my sister Mila is visiting from Ghent next weekend, she'll crash on the sofa"
+    },
+    {
+      "from": "p_mila",
+      "minute": 3,
+      "text": "the other Mila 😄 cool with me"
+    },
+    {
+      "from": "p_teo",
+      "minute": 4,
+      "text": "sure. Bram is she the one who's a vet?"
+    },
+    {
+      "from": "p_bram",
+      "minute": 5,
+      "text": "yep, she's a large-animal vet, mostly horses"
+    },
+    {
+      "from": "p_teo",
+      "minute": 7,
+      "text": "nice. ok big news from me actually: I left Larkspur, started at Quillmoor Labs on Monday"
+    },
+    {
+      "from": "assistant",
+      "minute": 8,
+      "text": "Congratulations, Teodora! What's the new role at Quillmoor Labs?"
+    },
+    {
+      "from": "p_teo",
+      "minute": 9,
+      "text": "supply chain analyst. fully remote on fridays which is the dream"
+    },
+    {
+      "from": "p_mila",
+      "minute": 10,
+      "text": "finally!! drinks on thursday then"
+    },
+    {
+      "from": "p_bram",
+      "minute": 12,
+      "text": "did anyone watch the derby last night? what a mess of a second half"
+    },
+    {
+      "from": "p_mila",
+      "minute": 13,
+      "text": "don't. I'm still annoyed about the penalty"
+    },
+    {
+      "from": "p_bram",
+      "minute": 14,
+      "text": "ref needs glasses honestly"
+    },
+    {
+      "from": "assistant",
+      "minute": 15,
+      "text": "Rough match. Want me to put Thursday drinks for Teodora's new job in the house calendar?"
+    },
+    {
+      "from": "p_teo",
+      "minute": 16,
+      "text": "yes please, 7pm at the Anchor"
+    },
+    {
+      "from": "assistant",
+      "minute": 17,
+      "text": "Done: Thursday 7pm at the Anchor is in the house calendar."
+    },
+    {
+      "from": "p_mila",
+      "minute": 60,
+      "text": "random q for the flat: I'm going vegetarian from this month, so maybe no more shared mince in the freezer?"
+    },
+    {
+      "from": "p_bram",
+      "minute": 61,
+      "text": "fair, I'll label my stuff"
+    },
+    {
+      "from": "p_teo",
+      "minute": 62,
+      "text": "Mila are you doing it for health or climate?"
+    },
+    {
+      "from": "p_mila",
+      "minute": 63,
+      "text": "climate mostly. and I'm allergic to shellfish anyway so seafood was already out"
+    },
+    {
+      "from": "assistant",
+      "minute": 64,
+      "text": "Noted. I can keep a vegetarian-friendly list for the shared shopping."
+    },
+    {
+      "from": "p_bram",
+      "minute": 66,
+      "text": "while we're at it, the boiler guy comes wednesday between 8 and 12"
+    },
+    {
+      "from": "p_teo",
+      "minute": 67,
+      "text": "I'm out wednesday, can someone be home?"
+    },
+    {
+      "from": "p_mila",
+      "minute": 68,
+      "text": "I work from home wednesdays, I'll let him in"
+    },
+    {
+      "from": "p_bram",
+      "minute": 120,
+      "text": "update on my sister: she's not coming next weekend after all, moved to the 21st"
+    },
+    {
+      "from": "p_teo",
+      "minute": 121,
+      "text": "ok sofa free then"
+    },
+    {
+      "from": "assistant",
+      "minute": 122,
+      "text": "Got it, Bram's sister Mila now visits around the 21st."
+    },
+    {
+      "from": "p_bram",
+      "minute": 123,
+      "text": "also correction from earlier, she's not mostly horses anymore, she switched to a small-animal clinic in Ghent in the spring"
+    },
+    {
+      "from": "p_mila",
+      "minute": 124,
+      "text": "wait so she does cats and dogs now?"
+    },
+    {
+      "from": "p_bram",
+      "minute": 125,
+      "text": "yeah, cats, dogs and the occasional ferret"
+    },
+    {
+      "from": "p_teo",
+      "minute": 126,
+      "text": "lol. ok I'm off, have a good one"
+    },
+    {
+      "from": "p_mila",
+      "minute": 127,
+      "text": "bye!"
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 16,
+      "response": {
+        "memories": [
+          {
+            "content": "Bram Okafor's sister Mila Okafor is visiting the flat from Ghent next weekend and will sleep on the sofa",
+            "memory_type": "plan",
+            "significance": 2,
+            "emotion_valence": 0.3,
+            "emotion_arousal": 0.2,
+            "entities": [
+              {
+                "name": "Bram Okafor",
+                "type": "person",
+                "matched_participant_key": "9100012"
+              },
+              {
+                "name": "Mila Okafor",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Ghent",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Bram Okafor",
+                "field": "sister",
+                "value": "sister: Mila Okafor",
+                "polarity": "is",
+                "slot": "key_relationships",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Bram Okafor",
+                "predicate": "sibling_of",
+                "object": "Mila Okafor",
+                "confidence": 0.9
+              }
+            ],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Mila Okafor, Bram's sister, is a large-animal vet who mostly treats horses",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Okafor",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Bram Okafor",
+                "type": "person",
+                "matched_participant_key": "9100012"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Mila Okafor",
+                "field": "occupation",
+                "value": "large-animal vet",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Teodora Valk left Larkspur Freight and started as a supply chain analyst at Quillmoor Labs this week; she works remotely on Fridays",
+            "memory_type": "status_change",
+            "significance": 4,
+            "emotion_valence": 0.7,
+            "emotion_arousal": 0.5,
+            "entities": [
+              {
+                "name": "Teodora Valk",
+                "type": "person",
+                "matched_participant_key": "9100011"
+              },
+              {
+                "name": "Quillmoor Labs",
+                "type": "organization",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Larkspur Freight",
+                "type": "organization",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": "{{trace:pre_teo_employer}}",
+            "facts": [
+              {
+                "subject": "Teodora Valk",
+                "field": "employer",
+                "value": "Quillmoor Labs",
+                "polarity": "is",
+                "slot": "employer",
+                "durability": "durable"
+              },
+              {
+                "subject": "Teodora Valk",
+                "field": "role",
+                "value": "supply chain analyst",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Teodora Valk",
+                "predicate": "works_at",
+                "object": "Quillmoor Labs",
+                "confidence": 0.9
+              }
+            ],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "The flat is having drinks on Thursday at 7pm at the Anchor to celebrate Teodora's new job",
+            "memory_type": "plan",
+            "significance": 2,
+            "emotion_valence": 0.5,
+            "emotion_arousal": 0.3,
+            "entities": [
+              {
+                "name": "Teodora Valk",
+                "type": "person",
+                "matched_participant_key": "9100011"
+              },
+              {
+                "name": "the Anchor",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    },
+    {
+      "after": 24,
+      "response": {
+        "memories": [
+          {
+            "content": "Mila Horvat is going vegetarian this month, mainly for climate reasons",
+            "memory_type": "preference",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Horvat",
+                "type": "person",
+                "matched_participant_key": "9100013"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Mila Horvat",
+                "field": "diet",
+                "value": "vegetarian",
+                "polarity": "is",
+                "slot": "stable_preferences",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Mila Horvat is allergic to shellfish",
+            "memory_type": "fact",
+            "significance": 4,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Horvat",
+                "type": "person",
+                "matched_participant_key": "9100013"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Mila Horvat",
+                "field": "allergy",
+                "value": "shellfish",
+                "polarity": "is",
+                "slot": "allergies",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "A boiler engineer is coming on Wednesday between 8 and 12; Mila Horvat will let him in because she works from home on Wednesdays",
+            "memory_type": "plan",
+            "significance": 2,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Horvat",
+                "type": "person",
+                "matched_participant_key": "9100013"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.75,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    },
+    {
+      "after": 32,
+      "response": {
+        "memories": [
+          {
+            "content": "Mila Okafor's visit to the flat moved from next weekend to around the 21st",
+            "memory_type": "plan",
+            "significance": 2,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Okafor",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Bram Okafor",
+                "type": "person",
+                "matched_participant_key": "9100012"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.8,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Mila Okafor switched to a small-animal clinic in Ghent in the spring and now treats cats, dogs and the occasional ferret",
+            "memory_type": "status_change",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Mila Okafor",
+                "type": "person",
+                "matched_participant_key": null
+              },
+              {
+                "name": "Ghent",
+                "type": "place",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": "{{trace:sister_occupation_v1}}",
+            "facts": [
+              {
+                "subject": "Mila Okafor",
+                "field": "occupation",
+                "value": "small-animal vet",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [
+              {
+                "subject": "Mila Okafor",
+                "predicate": "works_in",
+                "object": "Ghent",
+                "confidence": 0.8
+              }
+            ],
+            "confidence": 0.85,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "bram_sister",
+        "fact": {
+          "value_contains": "sister: Mila Okafor"
+        },
+        "subject": "Bram Okafor",
+        "subject_participant": "p_bram",
+        "durable": false
+      },
+      {
+        "label": "sister_occupation_v1",
+        "fact": {
+          "value_contains": "large-animal vet"
+        },
+        "subject": "Mila Okafor",
+        "durable": true
+      },
+      {
+        "label": "teo_employer_v2",
+        "fact": {
+          "value_contains": "Quillmoor"
+        },
+        "subject": "Teodora Valk",
+        "subject_participant": "p_teo",
+        "durable": true
+      },
+      {
+        "label": "teo_occupation",
+        "fact": {
+          "value_contains": "supply chain analyst"
+        },
+        "subject": "Teodora Valk",
+        "subject_participant": "p_teo",
+        "durable": true
+      },
+      {
+        "label": "drinks_plan",
+        "content_contains": [
+          "Anchor",
+          "Thursday"
+        ]
+      },
+      {
+        "label": "mila_vegetarian",
+        "fact": {
+          "value_contains": "vegetarian"
+        },
+        "subject": "Mila Horvat",
+        "subject_participant": "p_mila",
+        "durable": false
+      },
+      {
+        "label": "mila_allergy",
+        "fact": {
+          "value_contains": "shellfish"
+        },
+        "subject": "Mila Horvat",
+        "subject_participant": "p_mila",
+        "durable": false
+      },
+      {
+        "label": "boiler_visit",
+        "content_contains": [
+          "boiler",
+          "Wednesday"
+        ]
+      },
+      {
+        "label": "sister_visit_moved",
+        "content_contains": [
+          "21st"
+        ]
+      },
+      {
+        "label": "sister_occupation_v2",
+        "fact": {
+          "value_contains": "small-animal vet"
+        },
+        "subject": "Mila Okafor",
+        "durable": true
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "rota_echo",
+        "kind": "assistant_echo",
+        "content_contains": [
+          "on bins"
+        ]
+      },
+      {
+        "id": "derby_chatter",
+        "kind": "distractor",
+        "content_contains": [
+          "penalty"
+        ]
+      },
+      {
+        "id": "derby_ref",
+        "kind": "distractor",
+        "content_contains": [
+          "derby"
+        ]
+      }
+    ],
+    "supersessions": [
+      {
+        "old": "pre_teo_employer",
+        "new": "teo_employer_v2"
+      },
+      {
+        "old": "sister_occupation_v1",
+        "new": "sister_occupation_v2"
+      }
+    ],
+    "must_stay_valid": [
+      "pre_bram_hometown",
+      "bram_sister"
+    ],
+    "dedup": [
+      {
+        "id": "teodora_one_row",
+        "names": [
+          "Teodora Valk"
+        ],
+        "type": "person",
+        "max_rows": 1
+      },
+      {
+        "id": "bram_one_row",
+        "names": [
+          "Bram Okafor"
+        ],
+        "type": "person",
+        "max_rows": 1
+      },
+      {
+        "id": "sister_one_row",
+        "names": [
+          "Mila Okafor"
+        ],
+        "type": "person",
+        "max_rows": 1
+      }
+    ],
+    "entities": [
+      {
+        "name": "Teodora Valk",
+        "type": "person",
+        "participant": "p_teo"
+      },
+      {
+        "name": "Bram Okafor",
+        "type": "person",
+        "participant": "p_bram"
+      },
+      {
+        "name": "Mila Horvat",
+        "type": "person",
+        "participant": "p_mila"
+      },
+      {
+        "name": "Mila Okafor",
+        "type": "person",
+        "participant": null
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_teo_employer",
+        "cue": "Where does Teodora Valk work now?",
+        "expect_labels": [
+          "teo_employer_v2"
+        ],
+        "forbid_labels": [
+          "pre_teo_employer"
+        ]
+      },
+      {
+        "id": "rb_sister_vet",
+        "cue": "What kind of vet is Mila Okafor now?",
+        "expect_labels": [
+          "sister_occupation_v2"
+        ],
+        "forbid_labels": [
+          "sister_occupation_v1"
+        ]
+      },
+      {
+        "id": "rb_abstain_blood_type",
+        "cue": "What is Bram Okafor's blood type?",
+        "expect_labels": [],
+        "forbid_contains": [
+          "blood type"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_teo_employer",
+        "asker": "p_mila",
+        "question": "Where does Teodora Valk work these days?",
+        "history": "none",
+        "expect_any": [
+          "Quillmoor"
+        ],
+        "prohibited": [
+          "works as a logistics planner"
+        ],
+        "axes": [
+          "stale_facts_updates",
+          "corrections_contradictions"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          7
+        ],
+        "memory_labels": [
+          "teo_employer_v2"
+        ],
+        "distance_user_turns": 20
+      },
+      {
+        "id": "q_sister_vet",
+        "asker": "p_teo",
+        "question": "What kind of vet is Bram's sister Mila Okafor now?",
+        "history": "none",
+        "expect_any": [
+          "small-animal"
+        ],
+        "prohibited": [
+          "mostly treats horses"
+        ],
+        "axes": [
+          "overlapping_names",
+          "corrections_contradictions",
+          "continuation_anaphora"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          28
+        ],
+        "memory_labels": [
+          "sister_occupation_v2"
+        ],
+        "distance_user_turns": 4
+      },
+      {
+        "id": "q_bram_hometown",
+        "asker": "p_teo",
+        "question": "Where did Bram Okafor grow up?",
+        "history": "none",
+        "expect_any": [
+          "Rotterdam"
+        ],
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [],
+        "memory_labels": [
+          "pre_bram_hometown"
+        ],
+        "distance_user_turns": 0
+      },
+      {
+        "id": "q_mila_allergy",
+        "asker": "p_bram",
+        "question": "Is Mila Horvat allergic to anything?",
+        "history": "none",
+        "expect_any": [
+          "shellfish"
+        ],
+        "axes": [
+          "group_sender_attribution",
+          "overlapping_names"
+        ],
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          20
+        ],
+        "memory_labels": [
+          "mila_allergy"
+        ],
+        "distance_user_turns": 10
+      },
+      {
+        "id": "q_derby_abstain",
+        "asker": "p_bram",
+        "question": "Who scored the derby penalty last night?",
+        "history": "none",
+        "abstain": true,
+        "axes": [
+          "distractor_topics",
+          "abstention_control"
+        ],
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0
+      }
+    ]
+  },
+  "split": "tuning"
+}

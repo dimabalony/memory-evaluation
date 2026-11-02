@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memory-evaluation"
+version = "0.1.0"
+description = "Backend-neutral memory evaluations and reproducible SDK lifecycle instruments"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE", "FIXTURE_LICENSES.json"]
+dependencies = []
+
+[project.optional-dependencies]
+sdk = ["recoleva==0.3.0", "SQLAlchemy==2.0.41"]
+pilot = ["boto3>=1.40,<2"]
+test = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2"]
+
+[project.urls]
+Repository = "https://github.com/dimabalony/memory-evaluation"
+Issues = "https://github.com/dimabalony/memory-evaluation/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["memory_evaluation*"]
+
+[tool.ruff]
+line-length = 120

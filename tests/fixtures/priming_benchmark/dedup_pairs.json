@@ -1,0 +1,165 @@
+{
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-880 generic test fixture"
+  },
+  "merge_pairs": [
+    {
+      "surface_a": "Миша",
+      "surface_b": "Misha",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Катя",
+      "surface_b": "Katya",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Павел",
+      "surface_b": "Pavel",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Олег",
+      "surface_b": "Oleg",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Елена",
+      "surface_b": "Elena",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Ольга",
+      "surface_b": "Olga",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Марина",
+      "surface_b": "Marina",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Иван",
+      "surface_b": "Ivan",
+      "should_merge": true,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Миша",
+      "surface_b": "Михаил",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Петрав",
+      "surface_b": "Petrov",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Алёна",
+      "surface_b": "Елена",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Олег",
+      "surface_b": "Олеся",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Pavel",
+      "surface_b": "Павло",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Alice",
+      "surface_b": "Bob",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Northwind",
+      "surface_b": "Southwind",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Elm",
+      "surface_b": "Oak",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Blue",
+      "surface_b": "Green",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Atlas",
+      "surface_b": "Aster",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Lark",
+      "surface_b": "Quill",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Nora",
+      "surface_b": "Nova",
+      "should_merge": false,
+      "type_a": "person",
+      "type_b": "person"
+    },
+    {
+      "surface_a": "Kai",
+      "surface_b": "Kai",
+      "type_a": "agent",
+      "type_b": "person",
+      "should_merge": false
+    }
+  ],
+  "entity_eligibility": [
+    {
+      "surface": "access_token",
+      "should_be_entity": false
+    },
+    {
+      "surface": "Misha",
+      "should_be_entity": true
+    }
+  ]
+}

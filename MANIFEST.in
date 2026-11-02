@@ -1,0 +1,8 @@
+include README.md SECURITY.md CONTRIBUTING.md NOTICE LICENSE FIXTURE_LICENSES.json SOURCE_PROVENANCE.json
+recursive-include tests *.py *.json
+recursive-include docs *.md
+include CANONICAL_INSTRUMENTS.json sdk-artifact.json
+recursive-include integration *.py
+recursive-include scripts *.py
+include pytest.ini requirements-test.txt AGENTS.md
+recursive-include .github *.yml

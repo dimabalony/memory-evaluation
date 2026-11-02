@@ -1,0 +1,503 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-12-ceramics-studio",
+  "title": "Ceramics: hometown outside history window, later corroboration and an explicitly denied ownership attribution",
+  "split": "held_out",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "34f8992be8388d8d3852313c462907fa0d3831e0a1bf801cfb426947808f81fd",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "continuation_anaphora",
+    "corrections_contradictions",
+    "durable_vs_transient",
+    "group_sender_attribution",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": -1009000000112,
+    "topic_id": null,
+    "is_group": true,
+    "title": "ceramics studio"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200120,
+      "name": "Ravi Sen",
+      "admin": true
+    },
+    {
+      "key": "peer",
+      "telegram_user_id": 9200121,
+      "name": "Ravina Sen",
+      "admin": false
+    }
+  ],
+  "messages": [
+    {
+      "from": "owner",
+      "minute": 0,
+      "text": "Before cleanup: I grew up in Mallowford."
+    },
+    {
+      "from": "peer",
+      "minute": 3,
+      "text": "I am Ravina Sen; I grew up elsewhere, so keep our cards separate."
+    },
+    {
+      "from": "assistant",
+      "minute": 6,
+      "text": "Separate histories for Ravi Sen and Ravina Sen."
+    },
+    {
+      "from": "owner",
+      "minute": 9,
+      "text": "The kiln inspection is provisionally 2026-07-01."
+    },
+    {
+      "from": "peer",
+      "minute": 12,
+      "text": "Fine. Can we first handle the wet clay buckets?"
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Yes, leave the labelled reclaim bucket alone."
+    },
+    {
+      "from": "assistant",
+      "minute": 18,
+      "text": "The inspection date remains provisional."
+    },
+    {
+      "from": "peer",
+      "minute": 21,
+      "text": "The unlabelled bucket has a crack."
+    },
+    {
+      "from": "owner",
+      "minute": 24,
+      "text": "Empty that one before lifting it."
+    },
+    {
+      "from": "assistant",
+      "minute": 27,
+      "text": "That prevents another spill."
+    },
+    {
+      "from": "peer",
+      "minute": 30,
+      "text": "The new student left glaze on a sponge."
+    },
+    {
+      "from": "owner",
+      "minute": 33,
+      "text": "Keep it out of the reclaim clay."
+    },
+    {
+      "from": "peer",
+      "minute": 36,
+      "text": "I will put it by the glaze sink."
+    },
+    {
+      "from": "owner",
+      "minute": 39,
+      "text": "Thanks. Is the mop usable?"
+    },
+    {
+      "from": "peer",
+      "minute": 42,
+      "text": "It is stiff, but soaking it should help."
+    },
+    {
+      "from": "assistant",
+      "minute": 45,
+      "text": "Let it soak while the floor dries."
+    },
+    {
+      "from": "peer",
+      "minute": 48,
+      "text": "A visitor thought we were siblings because of our names."
+    },
+    {
+      "from": "owner",
+      "minute": 51,
+      "text": "We are not related; Ravi and Ravina are different people."
+    },
+    {
+      "from": "peer",
+      "minute": 54,
+      "text": "They also asked where you grew up."
+    },
+    {
+      "from": "owner",
+      "minute": 57,
+      "text": "Still Mallowford. That part of my biography has not changed."
+    },
+    {
+      "from": "assistant",
+      "minute": 60,
+      "text": "Mallowford belongs to Ravi’s biography."
+    },
+    {
+      "from": "peer",
+      "minute": 63,
+      "text": "I will check the bottom shelf next."
+    },
+    {
+      "from": "owner",
+      "minute": 66,
+      "text": "For today only, the test tile is behind the striped jug."
+    },
+    {
+      "from": "peer",
+      "minute": 69,
+      "text": "I will move it back after the glaze test."
+    },
+    {
+      "from": "assistant",
+      "minute": 72,
+      "text": "Temporary test-tile location acknowledged."
+    },
+    {
+      "from": "peer",
+      "minute": 75,
+      "text": "Back to the inspection: did the engineer confirm July 1?"
+    },
+    {
+      "from": "owner",
+      "minute": 78,
+      "text": "No, she can only come on July 8."
+    },
+    {
+      "from": "owner",
+      "minute": 81,
+      "text": "The confirmed inspection is 2026-07-08; July 1 is no longer booked."
+    },
+    {
+      "from": "peer",
+      "minute": 84,
+      "text": "I will pass that on to the studio owner."
+    },
+    {
+      "from": "owner",
+      "minute": 87,
+      "text": "One correction: I am not the studio owner."
+    },
+    {
+      "from": "peer",
+      "minute": 90,
+      "text": "I had that wrong in the old membership notes."
+    },
+    {
+      "from": "owner",
+      "minute": 93,
+      "text": "I operate the kiln; Tamsin owns Clay Orchard. Please do not assign her ownership to me."
+    },
+    {
+      "from": "assistant",
+      "minute": 96,
+      "text": "Ravi operates the kiln; Tamsin owns the studio."
+    },
+    {
+      "from": "peer",
+      "minute": 99,
+      "text": "Returning to Ravi: does he own Clay Orchard, or does he operate its kiln?"
+    },
+    {
+      "from": "owner",
+      "minute": 102,
+      "text": "The latter. I operate the kiln and have no ownership stake."
+    },
+    {
+      "from": "peer",
+      "minute": 105,
+      "text": "Understood. We can stop here."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 10,
+      "response": {
+        "memories": [
+          {
+            "content": "Ravi Sen: grew up in Mallowford",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Ravi Sen",
+                "type": "person",
+                "matched_participant_key": "9200120"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Ravi Sen",
+                "field": "hometown",
+                "value": "grew up in Mallowford",
+                "polarity": "is",
+                "slot": "hometown",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "The kiln inspection is provisionally 2026-07-01",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Ravi Sen",
+                "type": "person",
+                "matched_participant_key": "9200120"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "grew up in Mallowford"
+        ],
+        "subject": "Ravi Sen",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "grew up in Mallowford"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "The kiln inspection is provisionally 2026-07-01"
+        ]
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "wrong_hometown",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Ravina Sen",
+          "Mallowford"
+        ]
+      },
+      {
+        "id": "temporary_tile",
+        "kind": "transient",
+        "content_contains": [
+          "striped jug"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable fact did Ravi Sen state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "peer",
+        "question": "Where did Ravi Sen grow up?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          1
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 28,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Mallowford"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "peer",
+        "question": "Which of Ravi and Ravina grew up in Mallowford?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          18,
+          19,
+          20
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 13,
+        "axes": [
+          "overlapping_names",
+          "topic_switch_return",
+          "group_sender_attribution"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Ravi"
+        ],
+        "expect_subject": "Ravi Sen",
+        "wrong_subjects": [
+          "Ravina Sen"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "peer",
+        "question": "Where is the test tile kept only for today?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          23
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 11,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "striped jug"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "peer",
+        "question": "Returning to Ravi: what does he actually do at Clay Orchard?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          30,
+          32,
+          34,
+          35
+        ],
+        "memory_labels": [
+          "pre_role"
+        ],
+        "distance_user_turns": 1,
+        "axes": [
+          "continuation_anaphora",
+          "corrections_contradictions",
+          "stale_facts_updates"
+        ],
+        "prohibited": [
+          "Ravi owns",
+          "Ravi is the owner"
+        ],
+        "expect_any": [
+          "operate the kiln",
+          "operates the kiln",
+          "kiln operator"
+        ]
+      },
+      {
+        "id": "q_date",
+        "asker": "peer",
+        "question": "When is the kiln inspection now confirmed?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          26,
+          27,
+          28
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 7,
+        "axes": [
+          "topic_switch_return",
+          "corrections_contradictions"
+        ],
+        "prohibited": [
+          "2026-07-01"
+        ],
+        "expect_any": [
+          "2026-07-08"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "peer",
+        "question": "What is Tamsin’s ownership percentage?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Ravi Sen",
+        "type": "person",
+        "participant": "owner"
+      }
+    ]
+  },
+  "pre_state": {
+    "known_participants": [
+      "owner"
+    ],
+    "traces": [
+      {
+        "label": "pre_role",
+        "content": "Ravi Sen owns Clay Orchard",
+        "memory_type": "fact",
+        "significance": 3,
+        "age_days": 90,
+        "entities": [
+          {
+            "name": "Ravi Sen",
+            "type": "person",
+            "participant": "owner"
+          }
+        ]
+      }
+    ]
+  }
+}

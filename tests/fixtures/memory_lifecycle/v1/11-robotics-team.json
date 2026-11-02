@@ -1,0 +1,513 @@
+{
+  "format": "kai-memory-lifecycle/v1",
+  "id": "lc-11-robotics-team",
+  "title": "Private robotics notes: narrated sister versus colleague, two extraction batches and late demo rescheduling",
+  "split": "held_out",
+  "_provenance": {
+    "source": "synthetic",
+    "author": "DB-840 synthetic corpus",
+    "approved_by": null,
+    "version": 1,
+    "content_sha256": "394e8b357f0e99aec3310eebfe1c87b26692c2ed82dd93840c3e01fbb5bdf9ac",
+    "pii": "none: fictional people, groups and events",
+    "license": "private-unlicensed"
+  },
+  "axes": [
+    "abstention_control",
+    "continuation_anaphora",
+    "corrections_contradictions",
+    "durable_vs_transient",
+    "overlapping_names",
+    "stale_facts_updates",
+    "topic_switch_return"
+  ],
+  "chat": {
+    "chat_id": 9200110,
+    "topic_id": null,
+    "is_group": false,
+    "title": "robotics team"
+  },
+  "start_at": "2026-01-01T08:00:00+00:00",
+  "participants": [
+    {
+      "key": "owner",
+      "telegram_user_id": 9200110,
+      "name": "Zoya Petrov",
+      "admin": true
+    }
+  ],
+  "messages": [
+    {
+      "from": "owner",
+      "minute": 0,
+      "text": "Kai, сохрани рабочую новость: я инженер по электронике в мастерской Север."
+    },
+    {
+      "from": "assistant",
+      "minute": 3,
+      "text": "Понял, Зоя. Как идёт подготовка робота?"
+    },
+    {
+      "from": "owner",
+      "minute": 6,
+      "text": "Демо пока назначено на 2026-10-04."
+    },
+    {
+      "from": "owner",
+      "minute": 9,
+      "text": "Моя сестра Зоя Карим помогает с афишей. Да, у нас одинаковые имена."
+    },
+    {
+      "from": "assistant",
+      "minute": 12,
+      "text": "Не буду смешивать Зою Петров и Зою Карим."
+    },
+    {
+      "from": "owner",
+      "minute": 15,
+      "text": "Она не инженер. Она работает иллюстратором и только рисует афишу."
+    },
+    {
+      "from": "owner",
+      "minute": 18,
+      "text": "У меня в команде ещё есть коллега Карим, но это не моя сестра."
+    },
+    {
+      "from": "assistant",
+      "minute": 21,
+      "text": "У коллеги Карима и сестры Зои Карим разные роли."
+    },
+    {
+      "from": "owner",
+      "minute": 24,
+      "text": "У робота слетел ремень, сейчас проверяю натяжитель."
+    },
+    {
+      "from": "assistant",
+      "minute": 27,
+      "text": "Сначала механика; к афише вернёмся позже."
+    },
+    {
+      "from": "owner",
+      "minute": 30,
+      "text": "Есть запасной ремень, так что задержки не будет."
+    },
+    {
+      "from": "owner",
+      "minute": 33,
+      "text": "Карим из команды отнёс старый на склад."
+    },
+    {
+      "from": "assistant",
+      "minute": 36,
+      "text": "Рабочий Карим, не Зоя Карим. Верно?"
+    },
+    {
+      "from": "owner",
+      "minute": 39,
+      "text": "Да. Кстати, я по-прежнему работаю в Севере; это не смена работодателя."
+    },
+    {
+      "from": "owner",
+      "minute": 42,
+      "text": "Вернёмся к сестре: она рисует афиши удалённо из Перми."
+    },
+    {
+      "from": "assistant",
+      "minute": 45,
+      "text": "Сестра Зоя Карим живёт и работает в Перми?"
+    },
+    {
+      "from": "owner",
+      "minute": 48,
+      "text": "Да, теперь она живёт в Перми, не в Уфе. Переехала в августе."
+    },
+    {
+      "from": "owner",
+      "minute": 51,
+      "text": "Её иллюстраторская работа от переезда не изменилась."
+    },
+    {
+      "from": "assistant",
+      "minute": 54,
+      "text": "Иллюстратор, Пермь; не инженер и не коллега Карим."
+    },
+    {
+      "from": "owner",
+      "minute": 57,
+      "text": "На сегодня всё про семейные новости."
+    },
+    {
+      "from": "owner",
+      "minute": 60,
+      "text": "Для сегодняшней сборки сервопривод лежит в оранжевом ланчбоксе."
+    },
+    {
+      "from": "assistant",
+      "minute": 63,
+      "text": "Временное место для сегодняшней сборки."
+    },
+    {
+      "from": "owner",
+      "minute": 66,
+      "text": "После сборки верну его в ящик деталей."
+    },
+    {
+      "from": "owner",
+      "minute": 69,
+      "text": "А теперь снова про демо."
+    },
+    {
+      "from": "assistant",
+      "minute": 72,
+      "text": "Что изменилось в бронировании?"
+    },
+    {
+      "from": "owner",
+      "minute": 75,
+      "text": "Организаторы дали зал только на неделю позже."
+    },
+    {
+      "from": "owner",
+      "minute": 78,
+      "text": "Подтверждённая дата 2026-10-11. Четвёртое октября отменено."
+    },
+    {
+      "from": "assistant",
+      "minute": 81,
+      "text": "Новое подтверждение важнее первоначальной даты."
+    },
+    {
+      "from": "owner",
+      "minute": 84,
+      "text": "Пожалуйста, не перепутай семейную афишу и рабочую демонстрацию."
+    },
+    {
+      "from": "assistant",
+      "minute": 87,
+      "text": "Разделю эти два контекста."
+    },
+    {
+      "from": "owner",
+      "minute": 90,
+      "text": "Никаких других новых фактов; заканчиваю чат."
+    }
+  ],
+  "checkpoints": [
+    {
+      "after": 10,
+      "response": {
+        "memories": [
+          {
+            "content": "Zoya Petrov: инженер по электронике в мастерской Север",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Zoya Petrov",
+                "type": "person",
+                "matched_participant_key": "9200110"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Zoya Petrov",
+                "field": "occupation",
+                "value": "инженер по электронике в мастерской Север",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          },
+          {
+            "content": "Демо назначено на 2026-10-04",
+            "memory_type": "plan",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Zoya Petrov",
+                "type": "person",
+                "matched_participant_key": "9200110"
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    },
+    {
+      "after": 20,
+      "response": {
+        "memories": [
+          {
+            "content": "Зоя Карим, сестра Зои Петров, работает иллюстратором и живёт в Перми",
+            "memory_type": "fact",
+            "significance": 3,
+            "emotion_valence": null,
+            "emotion_arousal": null,
+            "entities": [
+              {
+                "name": "Зоя Карим",
+                "type": "person",
+                "matched_participant_key": null
+              }
+            ],
+            "contradicts_memory_id": null,
+            "facts": [
+              {
+                "subject": "Зоя Карим",
+                "field": "occupation",
+                "value": "иллюстратор",
+                "polarity": "is",
+                "slot": "occupation",
+                "durability": "durable"
+              },
+              {
+                "subject": "Зоя Карим",
+                "field": "current_location",
+                "value": "Пермь",
+                "polarity": "is",
+                "slot": "current_location",
+                "durability": "durable"
+              }
+            ],
+            "relationships": [],
+            "confidence": 0.9,
+            "is_entity_eligible": true
+          }
+        ],
+        "social_experiences": []
+      }
+    }
+  ],
+  "expected": {
+    "writes": [
+      {
+        "label": "durable",
+        "content_contains": [
+          "инженер по электронике в мастерской Север"
+        ],
+        "subject": "Zoya Petrov",
+        "subject_participant": "owner",
+        "fact": {
+          "value_contains": "инженер по электронике в мастерской Север"
+        }
+      },
+      {
+        "label": "date_v1",
+        "content_contains": [
+          "Демо назначено на 2026-10-04"
+        ]
+      },
+      {
+        "label": "sister_work",
+        "content_contains": [
+          "Зоя Карим",
+          "иллюстратором",
+          "Перми"
+        ],
+        "fact": {
+          "value_contains": "иллюстратор"
+        },
+        "subject": "Зоя Карим"
+      }
+    ],
+    "prohibited": [
+      {
+        "id": "wrong_sister_role",
+        "kind": "wrong_attribution",
+        "content_contains": [
+          "Зоя Карим",
+          "инженер"
+        ]
+      },
+      {
+        "id": "temporary_servo",
+        "kind": "transient",
+        "content_contains": [
+          "оранжевом ланчбоксе"
+        ]
+      }
+    ],
+    "readback": [
+      {
+        "id": "rb_durable",
+        "cue": "What stable fact did Zoya Petrov state?",
+        "expect_labels": [
+          "durable"
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "id": "q_memory",
+        "asker": "owner",
+        "question": "Где и кем работает Зоя Петров?",
+        "history": "none",
+        "availability": "memory_only",
+        "evidence_message_indices": [
+          1
+        ],
+        "memory_labels": [
+          "durable"
+        ],
+        "distance_user_turns": 19,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "Север",
+          "Севере",
+          "Sever"
+        ]
+      },
+      {
+        "id": "q_agree",
+        "asker": "owner",
+        "question": "Кем работает сестра Зоя Карим?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          4,
+          6,
+          15,
+          18
+        ],
+        "memory_labels": [
+          "sister_work"
+        ],
+        "distance_user_turns": 8,
+        "axes": [
+          "continuation_anaphora",
+          "overlapping_names",
+          "topic_switch_return"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "иллюстратор",
+          "иллюстратором",
+          "illustrator"
+        ]
+      },
+      {
+        "id": "q_history",
+        "asker": "owner",
+        "question": "Где сервопривод именно для сегодняшней сборки?",
+        "history": "full",
+        "availability": "history_only",
+        "evidence_message_indices": [
+          21
+        ],
+        "memory_labels": [],
+        "distance_user_turns": 6,
+        "axes": [
+          "durable_vs_transient"
+        ],
+        "prohibited": [],
+        "expect_any": [
+          "оранжевом ланчбоксе",
+          "оранжевый ланчбокс",
+          "orange lunchbox"
+        ]
+      },
+      {
+        "id": "q_correction",
+        "asker": "owner",
+        "question": "Когда теперь подтверждено демо?",
+        "history": "full",
+        "availability": "history_conflicts_stale_memory",
+        "evidence_message_indices": [
+          24,
+          26,
+          27
+        ],
+        "memory_labels": [
+          "date_v1"
+        ],
+        "distance_user_turns": 2,
+        "axes": [
+          "continuation_anaphora",
+          "topic_switch_return",
+          "stale_facts_updates"
+        ],
+        "prohibited": [
+          "2026-10-04"
+        ],
+        "expect_any": [
+          "2026-10-11"
+        ]
+      },
+      {
+        "id": "q_city",
+        "asker": "owner",
+        "question": "В каком городе сейчас живёт сестра, а не коллега Карим?",
+        "history": "full",
+        "availability": "both_agree",
+        "evidence_message_indices": [
+          15,
+          16,
+          17
+        ],
+        "memory_labels": [
+          "sister_work"
+        ],
+        "distance_user_turns": 9,
+        "axes": [
+          "continuation_anaphora",
+          "overlapping_names",
+          "corrections_contradictions"
+        ],
+        "prohibited": [
+          "живёт в Уфе"
+        ],
+        "expect_any": [
+          "Пермь",
+          "Перми",
+          "Perm"
+        ]
+      },
+      {
+        "id": "q_absent",
+        "asker": "owner",
+        "question": "Какой адрес у склада Карима?",
+        "history": "none",
+        "availability": "nowhere",
+        "evidence_message_indices": [],
+        "memory_labels": [],
+        "distance_user_turns": 0,
+        "axes": [
+          "abstention_control"
+        ],
+        "prohibited": [],
+        "abstain": true
+      }
+    ],
+    "entities": [
+      {
+        "name": "Zoya Petrov",
+        "type": "person",
+        "participant": "owner"
+      },
+      {
+        "name": "Зоя Карим",
+        "type": "person",
+        "participant": null
+      }
+    ]
+  }
+}

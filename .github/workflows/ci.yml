@@ -1,0 +1,55 @@
+name: test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  neutral:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install '.[test]' build
+      - run: python -m pytest tests/neutral
+      - run: python -m build
+  sdk:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_USER: evaluation
+          POSTGRES_PASSWORD: evaluation
+          POSTGRES_DB: evaluation
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd 'pg_isready -U evaluation'
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      EVAL_SDK_WHEEL: build/sdk/recoleva-0.3.0-py3-none-any.whl
+      EVAL_DATABASE_URL: postgresql+asyncpg://evaluation:evaluation@localhost:5432/evaluation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python scripts/install_sdk_artifact.py
+      - run: python -m pip install '.[sdk,test]'
+      - run: python -m pytest
+      - run: python -m pytest integration --junitxml=sdk-integration.xml
+      - name: Require executed PostgreSQL tests
+        run: |
+          python - <<'PYTEST'
+          import xml.etree.ElementTree as ET
+          root = ET.parse("sdk-integration.xml").getroot()
+          suites = list(root.iter("testsuite"))
+          assert sum(int(s.get("tests", 0)) for s in suites) > 0
+          assert sum(int(s.get("skipped", 0)) for s in suites) == 0
+          assert sum(int(s.get("failures", 0)) + int(s.get("errors", 0)) for s in suites) == 0
+          PYTEST
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sdk-integration
+          path: sdk-integration.xml

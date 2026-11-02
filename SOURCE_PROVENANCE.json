@@ -1,0 +1,339 @@
+{
+  "format": "memory-evaluation-source/v1",
+  "seed_revision": "f5ad5b936d18f87da20ba2a7966d7d7482d386b5",
+  "reviewed_seed_manifest_sha256": "4129ced8b97186d9869d1056f23315e47a17e90d7082611be27d3798b42351ab",
+  "license": "GPL-3.0-or-later",
+  "tracking": "https://github.com/dimabalony/memory-evaluation/issues/1",
+  "files": [
+    {
+      "path": "docs/benchmarks/elephant-rubric.md",
+      "seed_sha256": "c0864d413a41067ed27458d794a23cf765aa031a3e814808017984df92c8e773",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/benchmark_dataset.py",
+      "seed_sha256": "08b3e49b4b40f0a7210b09bb8c60435b38b9785745f953851724f62f277301f4",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/benchmark_io.py",
+      "seed_sha256": "d8d8b918bdec1f6d0b5025174b26716bae766f2c06df00c75eff564afb2a3274",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/dedup_metric.py",
+      "seed_sha256": "bfaa8fe3eefc53f28ad20198328f969874de2307cdbfa5350d119fb33e0b9e85",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/elephant_scorer.py",
+      "seed_sha256": "0f27ba36f9cdfcb1369a5908812368011d033d2e0dc24d76d32ee65ca00faa4c",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/__init__.py",
+      "seed_sha256": "cef535ba8854e3b8135c86701ef741f65752bca1aca43829e914e39af04873a5",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/__main__.py",
+      "seed_sha256": "85d0441cf35dde75ac6925d82df343810702ebbb90de7e788ffc39794edadf1c",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/_models.py",
+      "seed_sha256": "f907452aaead2746861c88470f85e40f96c9607ae12cde8133f25018f9fa5359",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/answering.py",
+      "seed_sha256": "1d5b08e7bcac84e4d3fb7b722318a641551b78d2ae3a436946d5a85836db2a86",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/budget.py",
+      "seed_sha256": "c5aa00ac8685415a2b38a3a1bf69e1bac876b7a8d3fb25bd3c2e6114c5eb57a9",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/diagnostics.py",
+      "seed_sha256": "6888f25829cf02b495c41a3d557cd644729af6d94d87b22291899a63bf8cb184",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/disposable_db.py",
+      "seed_sha256": "526fa49561993d94908442119f6a0906693293476c1ddb0818b29695ba7e4f2e",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/extractors.py",
+      "seed_sha256": "d07ac1d8c4a976ea371b7641a51316d99ead080b1114dc54aaa2436fef145e0d",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/fixtures.py",
+      "seed_sha256": "1db2a09a1d361239765db0bf270b2b418eaaf65cf49bce65b4f2ace7ce59af5f",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/matching.py",
+      "seed_sha256": "88bee7154a38f6ce11583c37e12caa1fbfa572c73e50299c824b24cfc881b21a",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/pilot.py",
+      "seed_sha256": "3727d16762066d10232adb5d7d4e6760175171875ae7447c118e669e703f5536",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/procedural.py",
+      "seed_sha256": "91def1a35af257cf570e3f9cafec2e464a5e650da2f3d48c7103d4a6c8097f20",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/providers.py",
+      "seed_sha256": "02695db762584659f11fda384392356fe723ef3dfe01e5d62c60a84d1a0286dc",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/runner.py",
+      "seed_sha256": "3a7d6a6f959f73463a48e250b413c5891d2937f71a475ad591a109229fffe1d7",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/scoring.py",
+      "seed_sha256": "9f57c8c39f942403660d00fb9954a69a768d61d78cece3b9f2c2bc5ced224652",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/eval/standalone.py",
+      "seed_sha256": "c1d52efdb2c9565d6caf3c15f0df13bb77234c0f01a1ca5813c9cc5c5e7b88f8",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/gold_eval.py",
+      "seed_sha256": "fbca7d45ab63150f7a21a879a7a8538b4140ec087bfc92d4517f9700382d96e6",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "src/memory_evaluation/gold_judge.py",
+      "seed_sha256": "776e91fce78664a74968ca6fa0ea236457a3353ccb141b20a3776708037fea8a",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/elephant/canonical.json",
+      "seed_sha256": "58d514cae756232d261b2a308eabc5c98d30f041a631963afa0b4e015b5c12c7",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/01-flatmates-group.json",
+      "seed_sha256": "ec40fb90528e512f878071e19d3973acaf5900e8af2ac35526ff007767416e53",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/02-private-family-health.json",
+      "seed_sha256": "11d8a35c9aa1d94cfaef7903c8c99d57014129c5e81dca2a0451ad935c2f3597",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/03-studio-team-topic.json",
+      "seed_sha256": "a0609b3ff86430a435379e204fd8151e501b062dfd0331735016036f1fe1eceb",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/04-cross-script-household.json",
+      "seed_sha256": "7bf08e83f6cf0851f8e7c063149ec9916fb614638a49f8ec06f72a735194ef30",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/05-volunteer-garden.json",
+      "seed_sha256": "febc3f85a46c9e7105f6acd920d2e0d6da8749d00ba9615009f3bb07ba04a130",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/06-choir-rehearsal.json",
+      "seed_sha256": "aaf3eba9486dfb4932d965851886e60a7ebcbd1d7d85021d21bd869ca2d68826",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/07-cycling-club.json",
+      "seed_sha256": "d1f2aa760d77a8b8edaccdd876b480f2dee3193c957e43cd29a0f9392d8989b6",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/08-library-workshop.json",
+      "seed_sha256": "78fa5cbbf269536b25ad75889dbf967fafea72483cdcce13611ccd17bf6af015",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/09-theatre-props.json",
+      "seed_sha256": "4228d4403df656259ce8843f46c2fca4b6cd37f7f783bb26cad97f54211c2cdc",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/10-bakery-team.json",
+      "seed_sha256": "422936e893b64ce652f1db4edbf41ca74b20cc2623528e6c79d504448997a143",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/11-robotics-team.json",
+      "seed_sha256": "7d85fd9204daef52fc3fe0d51bec23249fd698c1ad86f40f189735bff22be688",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_lifecycle/v1/12-ceramics-studio.json",
+      "seed_sha256": "a58c9e31b5d418c9b5388d376b6f60382d6533646e915be169a53a666ff4b231",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/memory_m5/efficacy_preparation.json",
+      "seed_sha256": "ccfd618a5128db7f519a0176d024e432ce987e14f45fec7a666d9b128584d693",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/services/memory/test_elephant_scorer.py",
+      "seed_sha256": "d623b521b1a14132512e608a87bcb832d725b3bf76cc1f319c47453b26da9fc0",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_benchmark_dataset.py",
+      "seed_sha256": "15fa3b93a0c3f94942d2a9e5fa9228d00ebc22a699722069bc04f12505ce1b71",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_dedup_canonicalization_gate.py",
+      "seed_sha256": "e22d3175dc772fb87b298e269537706b7071a56aa759f1bf8de2158788a797a8",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_dedup_metric.py",
+      "seed_sha256": "f03d2ed9cbcf4a5aa3518b19f429729088d299606986602678f65b15b51df3e9",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_gold_eval.py",
+      "seed_sha256": "c7dbc03c7896972f04859c5e44aeccf50a4c1b5861fb0f0f3f1fbed32abfb345",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_gold_judge.py",
+      "seed_sha256": "a09c50cb5a0f289851ba46d49d3c938020de02f2e29f1c3159d9f1ef7ee53fde",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_answering.py",
+      "seed_sha256": "8330c136a53debe783bbeed84b9cd73add6af9985a9805c2406c67e1e472e339",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_cli.py",
+      "seed_sha256": "f339948d93152ebd19b4becd411f4e0431cb78b186b5da8243a690c607393b18",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_diagnostics.py",
+      "seed_sha256": "2b8d349402bc0078820d963954e9df0dc1bb340de4cfa9c337f9d1faae75ebb6",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_extractors.py",
+      "seed_sha256": "a46c7a423586885a975ea9fe1581eb5fd36fb7361a9e91fb7f14437ebb4c0995",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_fixture_clock.py",
+      "seed_sha256": "a7e4f729095b50a580702cbcaa838e25ead188c22a86db8d2b0a3ed2d2e43139",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_fixtures.py",
+      "seed_sha256": "af5ec7190d2619df4b033406dc3a8d361e25c205c0721e528d5ec6c45a55cdea",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_guards.py",
+      "seed_sha256": "23612df96dc72af984bca33e002f4a88282bf0bd7ce3ffaa658011336defc0b8",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_m4_contract.py",
+      "seed_sha256": "c5ee74c294d643b635fa34b8fe0348fbadd21cdef05f3248205033120361ebb3",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_paired.py",
+      "seed_sha256": "f39f772e8e2d7d2735851055adc92a66d6718ce3f4db302fe5155d314b038d90",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_providers.py",
+      "seed_sha256": "2370aca6a536d18996eee941bfc4250fef087a123dc020c90497553fae43eaa0",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_recovery.py",
+      "seed_sha256": "7636e79d255f6546877cae735ffce88ef83c2e07609970be47421c148033e272",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_eval_scoring.py",
+      "seed_sha256": "1495de224f4eccd1d92e23873bc7b208d7c24aa73e46f8704362eb1f9187dd4c",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_m5_preparation.py",
+      "seed_sha256": "1e245d24e8bc34827de93365201f53f7719f6b0ded069f0502e6ab10c43a57a5",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/test_memory_pilot.py",
+      "seed_sha256": "879329d58f3e0bb3cf92bd81905224f37cef4fb05dd27aa7724c8b37908e9feb",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/memory_test_parsing.py",
+      "seed_sha256": "82f1669398a89316f9ddfcdec0c0edc4abd5ba95a0798b4d69b81884ff49078c",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/fixtures/priming_benchmark/dedup_pairs.json",
+      "seed_sha256": "9d791a20a77631d977d15a3fe3f8c31751637613c5013753275de538a09c0dd7",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "pyproject.toml",
+      "seed_sha256": "0ec6654dea8c11331ad47453dda769f477d9d4d0d2f2eb137029154f5a59d6d0",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "README.md",
+      "seed_sha256": "27483119ba399497c57f71cb8d8aade83745eb142d585017d64251e38f5885b8",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "tests/sdk_conftest_source.py",
+      "seed_sha256": "ad0ee0173f60a383a268e343ad945016d84e1ee40445ecb443b9afce60450662",
+      "transform": "namespace move; SDK-only host setup isolated from neutral tests"
+    },
+    {
+      "path": "tests/memory_test_support.py",
+      "seed_sha256": "c02f9d55892192fd2ddc032c3f3ade538ee190211a6d3c5ecb410a3690c95027",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "requirements-test.txt",
+      "seed_sha256": "7822714a1b3b1b38ab8f6329326871d78177fbe0d55d5cba172105bc9659fb40",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "pytest.ini",
+      "seed_sha256": "da9808d584f4d7bf9f89efb0e294727a7abd06903d9ae8fbc45f5dd93c59b684",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    },
+    {
+      "path": "MANIFEST.in",
+      "seed_sha256": "91356cabf7ce0acbc4456602b1e6a62e37cf2491c689ead78042f2ea5234d200",
+      "transform": "namespace move; explicit scorer injection and pure answer extraction where applicable"
+    }
+  ]
+}
